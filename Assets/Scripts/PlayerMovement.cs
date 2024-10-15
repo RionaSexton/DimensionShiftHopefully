@@ -8,9 +8,11 @@ public class PlayerMovement : MonoBehaviour
     public Transform spriteTransform;          // Reference to the sprite (child of the player)
     public Transform groundCheck;              // A point below the player to check for ground
     public float groundCheckRadius = 0.2f;     // Radius to check for ground
+    private bool isJumping = false;            // For jump animation
 
     private Rigidbody2D rb;
     private CapsuleCollider2D playerCollider;  // Reference to the CapsuleCollider2D for ducking
+    private Animator anim;
     private bool isGrounded;
     private bool isDucking = false;            // To track if the player is ducking
 
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<CapsuleCollider2D>();
+        anim = spriteTransform.GetComponent<Animator>();
 
         // Store the original size and offset of the collider and the sprite scale
         originalColliderSize = playerCollider.size;
@@ -51,6 +54,16 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
+        // Check player's velocity so jump anim plays in full
+        if (rb.velocity.y > 0.1f || rb.velocity.y < -0.1f)
+        {
+            isJumping = true;
+        }
+        else if (isGrounded)
+        {
+            isJumping = false;
+        }
+
         // Ducking logic using Left Ctrl
         if (Input.GetKey(KeyCode.LeftControl) && !isDucking)
         {
@@ -62,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Flip the sprite based on movement direction and crouch state
-        spriteTransform.GetComponent<PlayerSpriteFlip>().FlipSprite(moveDirection, isDucking);
+        spriteTransform.GetComponent<PlayerSpriteFlip>().FlipSprite(moveDirection, isDucking, isJumping);
     }
 
     private bool IsGrounded()
@@ -74,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
             // If any collider has the tag "Ground", the player is grounded
             if (collider.CompareTag("Ground"))
             {
+                isJumping = false; // Reset isJumping when the player is grounded
                 return true;
             }
         }
@@ -83,6 +97,8 @@ public class PlayerMovement : MonoBehaviour
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);  // Use velocity instead of linearVelocity
+        isJumping = true; // Animation plays
+        anim.SetTrigger("jumpTrigger");
     }
 
     private void Duck()

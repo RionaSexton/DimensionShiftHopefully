@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class PlayerSpriteFlip : MonoBehaviour
 {
-    
+    private Animator anim;
 
     private void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Flip the sprite and control animations based on the movement direction
-    public void FlipSprite(float moveDirection, bool isDucking)
+    public void FlipSprite(float moveDirection, bool isDucking, bool isJumping)
     {
         // Get current local scale to preserve vertical scaling (for crouching)
         Vector3 currentScale = transform.localScale;
@@ -31,7 +31,20 @@ public class PlayerSpriteFlip : MonoBehaviour
             transform.localScale = new Vector3(transform.localScale.x, currentScale.y, currentScale.z); // Maintain crouch size
         }
 
-    
+        // Control animations based on movement direction
+        anim.SetFloat("Speed", Mathf.Abs(moveDirection)); // Set the Speed parameter for the walking animation
+
+        if (moveDirection == 0)
+        {
+            anim.SetBool("isIdle", true);  // Set the Idle animation when not moving
+        }
+        else
+        {
+            anim.SetBool("isIdle", false); // Disable the Idle animation when moving
+        }
+
+        // Control Jump animation
+        anim.SetBool("isJumping", isJumping);
 
     }
 }
