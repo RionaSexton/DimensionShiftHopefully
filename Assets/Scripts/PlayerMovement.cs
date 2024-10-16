@@ -22,6 +22,13 @@ public class PlayerMovement : MonoBehaviour
 
     private const float crouchHeightMultiplier = 2f / 3f; // Crouching reduces height to 2/3
 
+    public AudioClip footstepSound;           // Footstep sound clip
+    private AudioSource audioSource;          // Reference to the AudioSource component
+
+    private float footstepCooldown = 0.5f;    // Time between footsteps
+    private float lastFootstepTime = 0f;      // Time when the last footstep sound was played
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,6 +39,14 @@ public class PlayerMovement : MonoBehaviour
         originalColliderSize = playerCollider.size;
         originalColliderOffset = playerCollider.offset;
         originalSpriteScale = spriteTransform.localScale;
+
+        audioSource = GetComponent<AudioSource>();
+
+        // Check if the AudioSource is missing and log a warning if it is
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSource not found on " + gameObject.name + ". Please add an AudioSource component.");
+        }
     }
 
     void Update()
@@ -51,6 +66,12 @@ public class PlayerMovement : MonoBehaviour
 
         // Set running animation parameter
         anim.SetBool("isRunning", isRunning && moveDirection != 0);
+
+        // Play footstep sound if the player is moving & grounded
+        if (isGrounded && Mathf.Abs(moveDirection) > 0.1f)
+        {
+            PlayFootstepSound(isRunning);
+        }
 
         // Jumping mechanic (W or Space to jump)
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -127,6 +148,19 @@ public class PlayerMovement : MonoBehaviour
 
         // Restore the player's sprite size
         spriteTransform.localScale = originalSpriteScale;
+    }
+
+    // Play footstep sounds when the player is moving
+    private void PlayFootstepSound(bool isRunning)
+    {
+        // Adjust the cooldown based on walking or running
+        float currentCooldown = isRunning ? footstepCooldown / 1.5f : footstepCooldown;
+
+        if (Time.time >= lastFootstepTime + currentCooldown && audioSource != null && footstepSound != null)
+        {
+            audioSource.PlayOneShot(footstepSound);
+            lastFootstepTime = Time.time; // Update the last footstep time
+        }
     }
 
     // Optional: Visualize the ground check in the editor (helps with debugging)

@@ -36,16 +36,17 @@ public class Lever : MonoBehaviour
             objectToDeactivate1.SetActive(false);
             objectToDeactivate2.SetActive(false);
 
-            // Play the sound clip
-            PlaySound();
+            // Play the sound clip & destroy it so it doesn't replay
+            PlaySoundAndDestroy();
         }
     }
 
-    private void PlaySound()
+    private void PlaySoundAndDestroy()
     {
         if (audioSource != null && soundClip != null)
         {
             audioSource.PlayOneShot(soundClip);
+            Destroy(audioSource, soundClip.length);
         }
         else
         {

@@ -1249,7 +1249,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b1fb0ea920771cc4c8b3ab2a5b8c6173, type: 3}
   m_Resource: {fileID: 8300000, guid: b1fb0ea920771cc4c8b3ab2a5b8c6173, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5119,7 +5119,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 1a7aeae77146ac54184b7a56464cc2f8, type: 3}
   m_Resource: {fileID: 8300000, guid: 1a7aeae77146ac54184b7a56464cc2f8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5252,7 +5252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.68, y: 28.98}
+  m_AnchoredPosition: {x: 11.22, y: 29.02}
   m_SizeDelta: {x: 2167.4924, y: 1458.9834}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &733043630
@@ -46097,7 +46097,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: af957d29cabca264980e417f9c038fef, type: 3}
   m_Resource: {fileID: 8300000, guid: af957d29cabca264980e417f9c038fef, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -47077,7 +47077,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: af957d29cabca264980e417f9c038fef, type: 3}
   m_Resource: {fileID: 8300000, guid: af957d29cabca264980e417f9c038fef, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -47851,7 +47851,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 444c4a4b2fc7e83418af5440b9cd7c08, type: 3}
   m_Resource: {fileID: 8300000, guid: 444c4a4b2fc7e83418af5440b9cd7c08, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -48717,7 +48717,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b1fb0ea920771cc4c8b3ab2a5b8c6173, type: 3}
   m_Resource: {fileID: 8300000, guid: b1fb0ea920771cc4c8b3ab2a5b8c6173, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -49881,7 +49881,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b1fb0ea920771cc4c8b3ab2a5b8c6173, type: 3}
   m_Resource: {fileID: 8300000, guid: b1fb0ea920771cc4c8b3ab2a5b8c6173, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -92613,26 +92613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 868253012133624113, guid: d9a2c3cf164eb8b408913faadf21145c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5834456337165969266, guid: d9a2c3cf164eb8b408913faadf21145c, type: 3}
       propertyPath: blackoutImage
       value: 
       objectReference: {fileID: 733043630}
-    - target: {fileID: 7412039475540547855, guid: d9a2c3cf164eb8b408913faadf21145c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462564726432277064, guid: d9a2c3cf164eb8b408913faadf21145c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8742243057624220858, guid: d9a2c3cf164eb8b408913faadf21145c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

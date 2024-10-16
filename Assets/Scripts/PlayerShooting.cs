@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
-    public GameObject projectilePrefab; // Reference to the projectile prefab
-    public Transform shootPoint;        // Point from where the projectile will be shot
-    public float projectileSpeed = 10f; // Speed of the projectile
+    public GameObject projectilePrefab;  // Reference to the projectile prefab
+    public Transform shootPoint;         // Point from where the projectile will be shot
+    public float projectileSpeed = 10f;  // Speed of the projectile
     public Transform spriteTransform;    // Reference to the sprite to determine its facing direction
     private Animator animator;           // Reference to the Animator for animations
+    public AudioClip soundClip;          // The sound clip to play
+    private AudioSource audioSource;     // Reference to the AudioSource component
 
     public float shootCooldown = 1f;    // Time in seconds between shots
     private float lastShootTime = 0f;   // Time when the last shot was fired
@@ -15,6 +17,14 @@ public class PlayerShooting : MonoBehaviour
     {
         // Find the Animator component on the child GameObject
         animator = GetComponentInChildren<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
+
+        // Check if the AudioSource is missing and log a warning if it is
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSource not found on " + gameObject.name + ". Please add an AudioSource component.");
+        }
     }
 
     void Update()
@@ -34,6 +44,7 @@ public class PlayerShooting : MonoBehaviour
             // Trigger the attack animation
             if (animator != null)
             {
+                PlaySound();
                 animator.SetBool("isAttacking", true);
             }
 
@@ -62,6 +73,18 @@ public class PlayerShooting : MonoBehaviour
                 Debug.LogError("Shoot point is not assigned.");
             if (spriteTransform == null)
                 Debug.LogError("Sprite transform is not assigned.");
+        }
+    }
+
+    private void PlaySound()
+    {
+        if (audioSource != null && soundClip != null)
+        {
+            audioSource.PlayOneShot(soundClip);
+        }
+        else
+        {
+            Debug.LogWarning("Sound clip not assigned in the inspector or AudioSource is missing.");
         }
     }
 

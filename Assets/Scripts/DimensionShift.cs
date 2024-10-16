@@ -8,6 +8,9 @@ public class DimensionShift : MonoBehaviour
     public string dimensionBLayerName = "DimensionB"; // Name of the Dimension B layer
     public string dimensionATag = "DimensionATag";    // Tag for Dimension A objects
     public string dimensionBTag = "DimensionBTag";    // Tag for Dimension B objects
+    public AudioClip soundClip;                       // The sound clip to play
+    private AudioSource audioSource;                  // Reference to the AudioSource component
+
 
     private GameObject[] dimensionAObjects; // All objects in Dimension A
     private GameObject[] dimensionBObjects; // All objects in Dimension B
@@ -28,14 +31,23 @@ public class DimensionShift : MonoBehaviour
 
         // Set the blackout image to be transparent initially
         blackoutImage.color = new Color(0, 0, 0, 0);
+
+        audioSource = GetComponent<AudioSource>();
+
+        // Check if the AudioSource is missing and log a warning if it is
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSource not found on " + gameObject.name + ". Please add an AudioSource component.");
+        }
     }
 
     void Update()
     {
-        // Listen for the E key press to switch dimensions
+        // Listen for the RMB press to switch dimensions
         if (Input.GetMouseButtonDown(1))
         {
             StartCoroutine(SwitchDimensionWithBlackout());
+            PlaySound();
         }
     }
 
@@ -122,6 +134,18 @@ public class DimensionShift : MonoBehaviour
             float alpha = 1f - Mathf.Clamp01(elapsedTime / blackoutDuration);
             blackoutImage.color = new Color(0, 0, 0, alpha);
             yield return null;
+        }
+    }
+
+    private void PlaySound()
+    {
+        if (audioSource != null && soundClip != null)
+        {
+            audioSource.PlayOneShot(soundClip);
+        }
+        else
+        {
+            Debug.LogWarning("Sound clip not assigned in the inspector or AudioSource is missing.");
         }
     }
 }
