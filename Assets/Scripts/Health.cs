@@ -17,7 +17,7 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         currentHealth = startingHealth;
-        spriteRend = GetComponent<SpriteRenderer>();
+        spriteRend = GetComponentInChildren<SpriteRenderer>();
     }
 
     public void TakeDamage(float _damage)

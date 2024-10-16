@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
-  iFramesDuration: 0
-  numberOfFlashes: 0
+  iFramesDuration: 2
+  numberOfFlashes: 3
 --- !u!114 &9088431226605508301
 MonoBehaviour:
   m_ObjectHideFlags: 0
