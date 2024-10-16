@@ -5,20 +5,20 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;              // Player walking speed
     public float runSpeed = 8f;               // Player running speed
     public float jumpForce = 10f;             // Jumping force applied to the player
-    public Transform spriteTransform;          // Reference to the sprite (child of the player)
-    public Transform groundCheck;              // A point below the player to check for ground
-    public float groundCheckRadius = 0.2f;     // Radius to check for ground
-    private bool isJumping = false;            // For jump animation
+    public Transform spriteTransform;         // Reference to the sprite (child of the player)
+    public Transform groundCheck;             // A point below the player to check for ground
+    public float groundCheckRadius = 0.2f;    // Radius to check for ground
+    private bool isJumping = false;           // For jump animation
 
     private Rigidbody2D rb;
-    private CapsuleCollider2D playerCollider;  // Reference to the CapsuleCollider2D for ducking
-    private Animator anim;
+    private CapsuleCollider2D playerCollider; // Reference to the CapsuleCollider2D for ducking
+    private Animator anim;                    // Animator component reference
     private bool isGrounded;
-    private bool isDucking = false;            // To track if the player is ducking
+    private bool isDucking = false;           // To track if the player is ducking
 
-    private Vector2 originalColliderSize;      // Original size of the player's capsule collider
-    private Vector2 originalColliderOffset;    // Original offset of the player's capsule collider
-    private Vector3 originalSpriteScale;       // Original scale of the player's sprite
+    private Vector2 originalColliderSize;     // Original size of the player's capsule collider
+    private Vector2 originalColliderOffset;   // Original offset of the player's capsule collider
+    private Vector3 originalSpriteScale;      // Original scale of the player's sprite
 
     private const float crouchHeightMultiplier = 2f / 3f; // Crouching reduces height to 2/3
 
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<CapsuleCollider2D>();
-        anim = spriteTransform.GetComponent<Animator>();
+        anim = spriteTransform.GetComponent<Animator>(); // Get the Animator component
 
         // Store the original size and offset of the collider and the sprite scale
         originalColliderSize = playerCollider.size;
@@ -40,13 +40,17 @@ public class PlayerMovement : MonoBehaviour
         float moveDirection = Input.GetAxisRaw("Horizontal");
 
         // Check if Left Shift is being pressed for running
-        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : moveSpeed;
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);  // Check if player is running
+        float currentSpeed = isRunning ? runSpeed : moveSpeed;
 
         // Apply movement with the selected speed
         rb.velocity = new Vector2(moveDirection * currentSpeed, rb.velocity.y);  // Use velocity instead of linearVelocity
 
         // Check if the player is grounded using a ground check point
         isGrounded = IsGrounded();
+
+        // Set running animation parameter
+        anim.SetBool("isRunning", isRunning && moveDirection != 0);
 
         // Jumping mechanic (W or Space to jump)
         if (Input.GetButtonDown("Jump") && isGrounded)

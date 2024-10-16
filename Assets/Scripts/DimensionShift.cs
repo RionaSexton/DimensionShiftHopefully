@@ -6,6 +6,8 @@ public class DimensionShift : MonoBehaviour
 {
     public string dimensionALayerName = "DimensionA"; // Name of the Dimension A layer
     public string dimensionBLayerName = "DimensionB"; // Name of the Dimension B layer
+    public string dimensionATag = "DimensionATag";    // Tag for Dimension A objects
+    public string dimensionBTag = "DimensionBTag";    // Tag for Dimension B objects
 
     private GameObject[] dimensionAObjects; // All objects in Dimension A
     private GameObject[] dimensionBObjects; // All objects in Dimension B
@@ -16,9 +18,9 @@ public class DimensionShift : MonoBehaviour
 
     void Start()
     {
-        // Get all objects in the DimensionA and DimensionB layers
-        dimensionAObjects = FindObjectsInLayer(LayerMask.NameToLayer(dimensionALayerName));
-        dimensionBObjects = FindObjectsInLayer(LayerMask.NameToLayer(dimensionBLayerName));
+        // Get all objects in the DimensionA and DimensionB layers or with tags
+        dimensionAObjects = FindObjectsInDimension(LayerMask.NameToLayer(dimensionALayerName), dimensionATag);
+        dimensionBObjects = FindObjectsInDimension(LayerMask.NameToLayer(dimensionBLayerName), dimensionBTag);
 
         // Initialize the game state: Start in Dimension A
         SetDimensionAActive(true);
@@ -69,12 +71,14 @@ public class DimensionShift : MonoBehaviour
         inDimensionA = !inDimensionA; // Toggle the dimension flag
     }
 
-    // Function to find all objects in a given layer
-    GameObject[] FindObjectsInLayer(int layer)
+    // Function to find all objects in a given layer or tag
+    GameObject[] FindObjectsInDimension(int layer, string tag)
     {
-        // Find all objects in the scene and filter by layer
+        // Find all objects in the scene
         GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
-        return System.Array.FindAll(allObjects, obj => obj.layer == layer);
+
+        // Filter objects either by layer or by tag
+        return System.Array.FindAll(allObjects, obj => obj.layer == layer || obj.CompareTag(tag));
     }
 
     // Method to activate or deactivate all objects in Dimension A
