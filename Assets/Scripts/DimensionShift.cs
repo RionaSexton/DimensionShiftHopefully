@@ -33,7 +33,7 @@ public class DimensionShift : MonoBehaviour
     void Update()
     {
         // Listen for the E key press to switch dimensions
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetMouseButtonDown(1))
         {
             StartCoroutine(SwitchDimensionWithBlackout());
         }
