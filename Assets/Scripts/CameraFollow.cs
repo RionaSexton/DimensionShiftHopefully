@@ -2,49 +2,62 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform player;
-    [SerializeField] private float offsetX = 0f; // Horizontal offset for the camera
-    [SerializeField] private float offsetY = 0f; // Vertical offset for the camera (Change both of these to set where you want the player in relation to the camera)
-    [SerializeField] private float smoothSpeed = 0.125f; // Smoothness factor for camera movement
+    public Transform player;   // Reference to the player's transform
 
-    public LayerMask groundLayer; // LayerMask to identify platforms or ground (Set a layer for the ground if haven't already)
-    public float groundCheckDistance = 0.1f; // Distance for ground check (used for raycasting)
+    [Header("Stabilization Settings")]
+    public bool stabilizeX = true;  // Toggle stabilization for the X axis
+    public bool stabilizeY = true;  // Toggle stabilization for the Y axis
+    public float stabilizationSpeedX = 0.2f;  // Speed of stabilization for the X axis (damping time)
+    public float stabilizationSpeedY = 0.2f;  // Speed of stabilization for the Y axis (damping time)
+    public float maxCameraSpeed = 15f;         // Maximum speed the camera can move to catch up
 
-    private float lastGroundedY; // Last Y position when the player was grounded
-    private bool isGrounded; // Whether the player is grounded
-    private Rigidbody2D playerRb; // Reference to the player's Rigidbody2D to check velocity
-
-    private float cameraTargetY; // Store the target Y position for the camera
+    private Vector3 offset;  // The initial offset between the camera and the player
+    private float velocityX = 0.0f; // Used to smoothly damp X axis
+    private float velocityY = 0.0f; // Used to smoothly damp Y axis
 
     void Start()
     {
-        // Get the player's Rigidbody2D for checking vertical velocity
-        playerRb = player.GetComponent<Rigidbody2D>();
-        cameraTargetY = transform.position.y; // Initialize targetY
+        // Calculate and store the initial offset between the player and camera position
+        if (player != null)
+        {
+            offset = transform.position - player.position;
+        }
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
-        // Perform a raycast down from the player's position to check if grounded
-        isGrounded = Physics2D.Raycast(player.position, Vector2.down, groundCheckDistance, groundLayer);
-
-        // Calculate the target Y position based on the player's position
-        float targetY = player.position.y + offsetY;
-
-        // Only update the camera's Y position if the player is below or above the current camera position
-        if (player.position.y < transform.position.y - offsetY) // Player falls below camera
+        if (player != null)
         {
-            cameraTargetY = Mathf.Lerp(cameraTargetY, targetY, smoothSpeed);
-        }
-        else if (player.position.y > transform.position.y + offsetY) // Player rises above camera
-        {
-            cameraTargetY = Mathf.Lerp(cameraTargetY, targetY, smoothSpeed);
-        }
+            // Determine the target position for the camera (based on the player’s current position + initial offset)
+            Vector3 targetPosition = player.position + offset;
 
-        // Set the desired position for the camera
-        Vector3 desiredPosition = new Vector3(player.position.x + offsetX, cameraTargetY, transform.position.z);
+            // Use the current camera position for stabilization
+            float newX = transform.position.x;
+            float newY = transform.position.y;
 
-        // Smoothly interpolate towards the desired position
-        transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            // Smoothly stabilize the camera on the X axis
+            if (stabilizeX)
+            {
+                newX = Mathf.SmoothDamp(transform.position.x, targetPosition.x, ref velocityX, stabilizationSpeedX);
+            }
+
+            // Smoothly stabilize the camera on the Y axis
+            if (stabilizeY)
+            {
+                newY = Mathf.SmoothDamp(transform.position.y, targetPosition.y, ref velocityY, stabilizationSpeedY);
+            }
+
+            // Clamp the maximum speed of the camera to prevent it from moving too fast
+            Vector3 smoothedPosition = new Vector3(newX, newY, transform.position.z);
+            Vector3 direction = (smoothedPosition - transform.position).normalized;
+            float distance = Vector3.Distance(transform.position, smoothedPosition);
+
+            // Apply clamping based on the maxCameraSpeed
+            float cameraMoveSpeed = Mathf.Min(distance / Time.fixedDeltaTime, maxCameraSpeed);
+            Vector3 finalPosition = transform.position + direction * cameraMoveSpeed * Time.fixedDeltaTime;
+
+            // Update the camera position
+            transform.position = finalPosition;
+        }
     }
 }

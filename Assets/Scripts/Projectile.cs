@@ -34,7 +34,7 @@ public class Projectile : MonoBehaviour
         }
 
         // Optionally, destroy the projectile when it hits other objects like walls
-        if (collision.CompareTag("Wall"))
+        if (collision.CompareTag("Ground"))
         {
             Destroy(gameObject);
         }
