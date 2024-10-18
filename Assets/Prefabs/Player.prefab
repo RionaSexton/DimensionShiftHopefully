@@ -161,8 +161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
-  iFramesDuration: 2
+  iFramesDuration: 1.5
   numberOfFlashes: 2
+  animator: {fileID: 0}
 --- !u!114 &9088431226605508301
 MonoBehaviour:
   m_ObjectHideFlags: 0

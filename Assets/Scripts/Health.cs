@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
 
     [Header("Animator")]
     [SerializeField] private Animator animator; // Reference to the Animator component
+    private bool dead;
 
     private void Awake()
     {
@@ -40,8 +41,14 @@ public class Health : MonoBehaviour
         }
         else
         {
-            // Player dead
-            HandleDeath(); // Call the HandleDeath method
+            if(!dead)
+            {
+                animator.SetTrigger("die");
+                GetComponent<PlayerMovement>().enabled = false;
+                dead = true;
+                HandleDeath();
+            }
+            
         }
     }
 
@@ -66,14 +73,8 @@ public class Health : MonoBehaviour
 
     private void HandleDeath()
     {
-        // Set the isDead bool in the Animator to true
-        if (animator != null)
-        {
-            animator.SetBool("isDead", true);
-        }
-
         // Start the coroutine to reset the scene after a delay
-        StartCoroutine(ResetSceneAfterDelay(2f)); // 2 seconds delay
+        StartCoroutine(ResetSceneAfterDelay(1f)); // 1 seconds delay
     }
 
     private IEnumerator ResetSceneAfterDelay(float delay)
