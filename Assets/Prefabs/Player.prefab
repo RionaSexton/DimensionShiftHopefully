@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5099181582271480444}
   - component: {fileID: 2556443215485694270}
   - component: {fileID: 5889464888561068994}
+  - component: {fileID: 467746618283421866}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -34,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 868253012133624113}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.02, y: -0.29, z: 0.008797536}
+  m_LocalPosition: {x: 18.880001, y: -0.49, z: 0.008797536}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -125,6 +126,8 @@ MonoBehaviour:
   spriteTransform: {fileID: 8019537595736864814}
   groundCheck: {fileID: 8101620501307773972}
   groundCheckRadius: 0.4
+  standingCollider: {fileID: 5504497193244681476}
+  crouchingCollider: {fileID: 467746618283421866}
   footstepSound: {fileID: 8300000, guid: cdaa7c63f642ee5429e26731aee0f00b, type: 3}
 --- !u!114 &5834456337165969266
 MonoBehaviour:
@@ -142,7 +145,7 @@ MonoBehaviour:
   dimensionBLayerName: DimensionB
   dimensionATag: DimensionATag
   dimensionBTag: DimensionBTag
-  soundClip: {fileID: 8300000, guid: cda9bb69450ec8843b5378abeb3d04b4, type: 3}
+  soundClip: {fileID: 8300000, guid: aaba39deed3fe564cad25ca4bad9fe01, type: 3}
   blackoutImage: {fileID: 0}
   blackoutDuration: 0.1
 --- !u!114 &4908593381446284277
@@ -159,7 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 5
   iFramesDuration: 2
-  numberOfFlashes: 3
+  numberOfFlashes: 2
 --- !u!114 &9088431226605508301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,6 +472,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &467746618283421866
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868253012133624113}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.8505512}
+  m_Radius: 0.42413718
 --- !u!1 &7412039475540547855
 GameObject:
   m_ObjectHideFlags: 0

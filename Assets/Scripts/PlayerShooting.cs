@@ -10,8 +10,8 @@ public class PlayerShooting : MonoBehaviour
     public AudioClip soundClip;          // The sound clip to play
     private AudioSource audioSource;     // Reference to the AudioSource component
 
-    public float shootCooldown = 1f;    // Time in seconds between shots
-    private float lastShootTime = 0f;   // Time when the last shot was fired
+    public float shootCooldown = 1f;     // Time in seconds between shots
+    private float lastShootTime = 0f;    // Time when the last shot was fired
 
     private void Start()
     {
@@ -39,7 +39,7 @@ public class PlayerShooting : MonoBehaviour
 
     private void Shoot()
     {
-        if (projectilePrefab != null && shootPoint != null && spriteTransform != null)
+        if (projectilePrefab != null && shootPoint != null)
         {
             // Trigger the attack animation
             if (animator != null)
@@ -58,9 +58,12 @@ public class PlayerShooting : MonoBehaviour
                 return; // Exit if there is no Rigidbody2D
             }
 
-            // Determine the direction based on the sprite's current scale
-            float direction = spriteTransform.localScale.x > 0 ? 1f : -1f; // Check the x scale for direction
-            projectileRb.velocity = new Vector2(direction * projectileSpeed, 0); // Set the projectile's velocity
+            // Get the mouse position in world space
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 direction = (mousePosition - shootPoint.position).normalized; // Calculate the direction from player to mouse
+
+            // Set the projectile's velocity based on the direction
+            projectileRb.velocity = direction * projectileSpeed;
 
             // Optional: Call a coroutine to reset the attack animation state after a delay
             StartCoroutine(ResetAttackAnimation());
@@ -71,8 +74,6 @@ public class PlayerShooting : MonoBehaviour
                 Debug.LogError("Projectile prefab is not assigned.");
             if (shootPoint == null)
                 Debug.LogError("Shoot point is not assigned.");
-            if (spriteTransform == null)
-                Debug.LogError("Sprite transform is not assigned.");
         }
     }
 

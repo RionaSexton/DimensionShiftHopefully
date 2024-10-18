@@ -25,7 +25,6 @@ public class DashEnemyMovement : MonoBehaviour
     private bool isChasing = false;
     private bool isDashing = false; // Flag to check if the enemy is currently dashing
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer
-    private Health playerHealth; // Reference to the player's Health component
 
     private Vector2 dashDirection; // Store the direction for the dash
     private float lastDashTime; // Track the time when the last dash occurred
@@ -35,7 +34,6 @@ public class DashEnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
         lastDashTime = -dashCooldown; // Initialize to allow immediate first dash
-        playerHealth = player.GetComponent<Health>(); // Get the Health component from the player
     }
 
     private void Update()
@@ -72,7 +70,7 @@ public class DashEnemyMovement : MonoBehaviour
     {
         // Check if the enemy is grounded
         bool grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckDistance, LayerMask.GetMask("Ground"));
-        
+
         return grounded;
     }
 
@@ -101,11 +99,7 @@ public class DashEnemyMovement : MonoBehaviour
                 Debug.Log("Wall too high, turning around.");
             }
         }
-        
     }
-
-
-
 
     private void Jump()
     {
@@ -174,13 +168,6 @@ public class DashEnemyMovement : MonoBehaviour
             yield return null; // Wait for the next frame
         }
 
-        // Check if the enemy hit the player during the dash
-        if (Vector2.Distance(transform.position, player.position) < attackDistance &&
-            Mathf.Abs(transform.position.y - player.position.y) < 1f) // Check y position difference
-        {
-            TakeDamage(); // Call the TakeDamage method if the player is hit
-        }
-
         rb.velocity = Vector2.zero; // Stop moving after dashing
         isDashing = false; // Reset dashing flag
         lastDashTime = Time.time; // Record the time of this dash
@@ -193,12 +180,6 @@ public class DashEnemyMovement : MonoBehaviour
 
         // Resume normal wandering
         Wander(); // Resume wandering behavior
-    }
-
-    private void TakeDamage()
-    {
-        playerHealth.TakeDamage(1); // Inflict 1 damage to the player
-        Debug.Log("Player hit! Inflicted 1 damage."); // Debug message to confirm damage
     }
 
     private IEnumerator FlashSprite()

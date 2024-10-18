@@ -14,10 +14,19 @@ public class Health : MonoBehaviour
     [SerializeField] private int numberOfFlashes; // How many colour flashes of the player
     private SpriteRenderer spriteRend;
 
+    [Header("Animator")]
+    [SerializeField] private Animator animator; // Reference to the Animator component
+
     private void Awake()
     {
         currentHealth = startingHealth;
         spriteRend = GetComponentInChildren<SpriteRenderer>();
+
+        // Ensure the Animator component is referenced
+        if (animator == null)
+        {
+            Debug.LogWarning("Animator not assigned in Health script on " + gameObject.name);
+        }
     }
 
     public void TakeDamage(float _damage)
@@ -32,7 +41,7 @@ public class Health : MonoBehaviour
         else
         {
             // Player dead
-            ResetScene(); // Reset the scene when health reaches 0
+            HandleDeath(); // Call the HandleDeath method
         }
     }
 
@@ -53,6 +62,24 @@ public class Health : MonoBehaviour
         }
 
         Physics2D.IgnoreLayerCollision(10, 11, false); // Change numbers here too
+    }
+
+    private void HandleDeath()
+    {
+        // Set the isDead bool in the Animator to true
+        if (animator != null)
+        {
+            animator.SetBool("isDead", true);
+        }
+
+        // Start the coroutine to reset the scene after a delay
+        StartCoroutine(ResetSceneAfterDelay(2f)); // 2 seconds delay
+    }
+
+    private IEnumerator ResetSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Wait for the specified delay
+        ResetScene(); // Reset the scene
     }
 
     private void ResetScene()

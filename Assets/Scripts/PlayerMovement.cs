@@ -11,16 +11,12 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping = false;           // For jump animation
 
     private Rigidbody2D rb;
-    private CapsuleCollider2D playerCollider; // Reference to the CapsuleCollider2D for ducking
     private Animator anim;                    // Animator component reference
     private bool isGrounded;
     private bool isDucking = false;           // To track if the player is ducking
 
-    private Vector2 originalColliderSize;     // Original size of the player's capsule collider
-    private Vector2 originalColliderOffset;   // Original offset of the player's capsule collider
-    private Vector3 originalSpriteScale;      // Original scale of the player's sprite
-
-    private const float crouchHeightMultiplier = 2f / 3f; // Crouching reduces height to 2/3
+    public CapsuleCollider2D standingCollider;    // Reference to the capsule collider used when standing
+    public CircleCollider2D crouchingCollider;    // Reference to the circle collider used when crouching
 
     public AudioClip footstepSound;           // Footstep sound clip
     private AudioSource audioSource;          // Reference to the AudioSource component
@@ -28,17 +24,10 @@ public class PlayerMovement : MonoBehaviour
     private float footstepCooldown = 0.5f;    // Time between footsteps
     private float lastFootstepTime = 0f;      // Time when the last footstep sound was played
 
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        playerCollider = GetComponent<CapsuleCollider2D>();
         anim = spriteTransform.GetComponent<Animator>(); // Get the Animator component
-
-        // Store the original size and offset of the collider and the sprite scale
-        originalColliderSize = playerCollider.size;
-        originalColliderOffset = playerCollider.offset;
-        originalSpriteScale = spriteTransform.localScale;
 
         audioSource = GetComponent<AudioSource>();
 
@@ -47,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.LogWarning("AudioSource not found on " + gameObject.name + ". Please add an AudioSource component.");
         }
+
+        // Ensure the crouching collider starts off disabled
+        crouchingCollider.enabled = false;
     }
 
     void Update()
@@ -59,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
         float currentSpeed = isRunning ? runSpeed : moveSpeed;
 
         // Apply movement with the selected speed
-        rb.velocity = new Vector2(moveDirection * currentSpeed, rb.velocity.y);  // Use velocity instead of linearVelocity
+        rb.velocity = new Vector2(moveDirection * currentSpeed, rb.velocity.y);
 
         // Check if the player is grounded using a ground check point
         isGrounded = IsGrounded();
@@ -92,11 +84,11 @@ public class PlayerMovement : MonoBehaviour
         // Ducking logic using Left Ctrl
         if (Input.GetKey(KeyCode.LeftControl) && !isDucking)
         {
-            Duck();
+            Duck();  // Call Duck() only once when Left Control is first pressed
         }
-        else if (Input.GetKeyUp(KeyCode.LeftControl) && isDucking)
+        else if (!Input.GetKey(KeyCode.LeftControl) && isDucking)
         {
-            StandUp();
+            StandUp();  // Call StandUp() only once when Left Control is released
         }
 
         // Flip the sprite based on movement direction and crouch state
@@ -130,24 +122,24 @@ public class PlayerMovement : MonoBehaviour
     {
         isDucking = true;
 
-        // Shrink the player's capsule collider to 2/3 of its original height
-        playerCollider.size = new Vector2(originalColliderSize.x, originalColliderSize.y * crouchHeightMultiplier);
-        playerCollider.offset = new Vector2(originalColliderOffset.x, originalColliderOffset.y * crouchHeightMultiplier);
+        // Disable the standing capsule collider and enable the crouching circle collider
+        standingCollider.enabled = false;
+        crouchingCollider.enabled = true;
 
-        // Shrink the player's sprite to 2/3 of its original height
-        spriteTransform.localScale = new Vector3(originalSpriteScale.x, originalSpriteScale.y * crouchHeightMultiplier, originalSpriteScale.z);
+        // Set the Animator's isDucking bool to true to trigger the duck animation
+        anim.SetBool("isDucking", true);
     }
 
     private void StandUp()
     {
         isDucking = false;
 
-        // Restore the player's capsule collider size
-        playerCollider.size = originalColliderSize;
-        playerCollider.offset = originalColliderOffset;
+        // Re-enable the standing capsule collider and disable the crouching circle collider
+        standingCollider.enabled = true;
+        crouchingCollider.enabled = false;
 
-        // Restore the player's sprite size
-        spriteTransform.localScale = originalSpriteScale;
+        // Set the Animator's isDucking bool to false to stop the duck animation
+        anim.SetBool("isDucking", false);
     }
 
     // Play footstep sounds when the player is moving

@@ -25,11 +25,8 @@ public class PlayerSpriteFlip : MonoBehaviour
             transform.localScale = new Vector3(Mathf.Abs(currentScale.x), currentScale.y, currentScale.z);  // Flip right
         }
 
-        // Ensure the scale remains appropriate for crouching (handled in PlayerMovement)
-        if (isDucking)
-        {
-            transform.localScale = new Vector3(transform.localScale.x, currentScale.y, currentScale.z); // Maintain crouch size
-        }
+        // Set the isDucking parameter in the Animator, playing the crouch/duck animation
+        anim.SetBool("isDucking", isDucking);
 
         // Control animations based on movement direction
         anim.SetFloat("Speed", Mathf.Abs(moveDirection)); // Set the Speed parameter for the walking animation
@@ -45,6 +42,5 @@ public class PlayerSpriteFlip : MonoBehaviour
 
         // Control Jump animation
         anim.SetBool("isJumping", isJumping);
-
     }
 }
