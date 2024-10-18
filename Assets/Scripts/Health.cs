@@ -74,7 +74,7 @@ public class Health : MonoBehaviour
     private void HandleDeath()
     {
         // Start the coroutine to reset the scene after a delay
-        StartCoroutine(ResetSceneAfterDelay(1f)); // 1 seconds delay
+        StartCoroutine(ResetSceneAfterDelay(1f)); // 1 second delay
     }
 
     private IEnumerator ResetSceneAfterDelay(float delay)
