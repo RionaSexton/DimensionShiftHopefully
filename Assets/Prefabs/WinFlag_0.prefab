@@ -149,3 +149,4 @@ MonoBehaviour:
   backgroundMusic: {fileID: 0}
   triumphantMusic: {fileID: 0}
   player: {fileID: 0}
+  delayBeforeNextLevel: 2.5

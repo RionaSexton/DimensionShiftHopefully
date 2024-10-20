@@ -1,12 +1,20 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class TriggerEventWithMusicAndFreeze : MonoBehaviour
 {
     public AudioSource backgroundMusic;  // The background music AudioSource
     public AudioSource triumphantMusic;  // The triumphant music AudioSource
     public GameObject player;            // Reference to the player GameObject
+    public float delayBeforeNextLevel = 2.5f;  // Time in seconds before moving to the next level
 
     private bool isTriggered = false;
+
+    private void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -27,18 +35,13 @@ public class TriggerEventWithMusicAndFreeze : MonoBehaviour
                 triumphantMusic.Play();
             }
 
-            // Freeze the entire game by setting time scale to 0
-            Time.timeScale = 0f;
-
-            // Optionally, disable player movement (if Time.timeScale = 0 does not stop everything)
-            if (player != null)
-            {
-                var playerMovementScript = player.GetComponent<PlayerMovement>();
-                if (playerMovementScript != null)
-                {
-                    playerMovementScript.enabled = false;
-                }
-            }
+            StartCoroutine(DelayedNextLevel());
         }
+    }
+
+    private IEnumerator DelayedNextLevel()
+    {
+        yield return new WaitForSeconds(delayBeforeNextLevel);
+        NextLevel();
     }
 }
