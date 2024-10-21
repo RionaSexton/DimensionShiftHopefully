@@ -1465,6 +1465,10 @@ PrefabInstance:
       propertyPath: blackoutImage
       value: 
       objectReference: {fileID: 552246488}
+    - target: {fileID: 6091769229900735785, guid: d9a2c3cf164eb8b408913faadf21145c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -19,23 +19,25 @@ public class PlayerMovement : MonoBehaviour
     public CircleCollider2D crouchingCollider;    // Reference to the circle collider used when crouching
 
     public AudioClip footstepSound;           // Footstep sound clip
-    private AudioSource audioSource;          // Reference to the AudioSource component
+    private AudioSource footstepAudioSource;          // Reference to the AudioSource component
 
     private float footstepCooldown = 0.5f;    // Time between footsteps
     private float lastFootstepTime = 0f;      // Time when the last footstep sound was played
+
+    // Acceleration variables
+    public float acceleration = 10f;          // Acceleration rate
+    public float deceleration = 15f;          // Deceleration rate
+    private float currentSpeed = 0f;          // The player's current horizontal speed
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = spriteTransform.GetComponent<Animator>(); // Get the Animator component
 
-        audioSource = GetComponent<AudioSource>();
-
-        // Check if the AudioSource is missing and log a warning if it is
-        if (audioSource == null)
-        {
-            Debug.LogWarning("AudioSource not found on " + gameObject.name + ". Please add an AudioSource component.");
-        }
+        // Assign or create a dedicated footstep audio source
+        footstepAudioSource = gameObject.AddComponent<AudioSource>(); // Add new AudioSource
+        footstepAudioSource.clip = footstepSound;
+        footstepAudioSource.loop = false;     // Ensure it doesn't loop
 
         // Ensure the crouching collider starts off disabled
         crouchingCollider.enabled = false;
@@ -48,9 +50,19 @@ public class PlayerMovement : MonoBehaviour
 
         // Check if Left Shift is being pressed for running
         bool isRunning = Input.GetKey(KeyCode.LeftShift);  // Check if player is running
-        float currentSpeed = isRunning ? runSpeed : moveSpeed;
+        float targetSpeed = isRunning ? runSpeed : moveSpeed;
 
-        // Apply movement with the selected speed
+        // Gradually increase or decrease speed based on movement input
+        if (Mathf.Abs(moveDirection) > 0.1f)
+        {
+            currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, acceleration * Time.deltaTime);
+        }
+        else
+        {
+            currentSpeed = Mathf.MoveTowards(currentSpeed, 0f, deceleration * Time.deltaTime);
+        }
+
+        // Apply movement with acceleration
         rb.velocity = new Vector2(moveDirection * currentSpeed, rb.velocity.y);
 
         // Check if the player is grounded using a ground check point
@@ -63,6 +75,14 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && Mathf.Abs(moveDirection) > 0.1f)
         {
             PlayFootstepSound(isRunning);
+        }
+        else
+        {
+            // Stop the footstep sound if the player stops moving
+            if (footstepAudioSource.isPlaying)
+            {
+                footstepAudioSource.Stop();
+            }
         }
 
         // Jumping mechanic (W or Space to jump)
@@ -148,9 +168,14 @@ public class PlayerMovement : MonoBehaviour
         // Adjust the cooldown based on walking or running
         float currentCooldown = isRunning ? footstepCooldown / 1.5f : footstepCooldown;
 
-        if (Time.time >= lastFootstepTime + currentCooldown && audioSource != null && footstepSound != null)
+        if (Time.time >= lastFootstepTime + currentCooldown && footstepAudioSource != null && footstepSound != null)
         {
-            audioSource.PlayOneShot(footstepSound);
+            // Check if the audio is not playing, then play it
+            if (!footstepAudioSource.isPlaying)
+            {
+                footstepAudioSource.Play();
+            }
+
             lastFootstepTime = Time.time; // Update the last footstep time
         }
     }
