@@ -842,6 +842,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4516115200454710562, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7165160369194707751, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: playerHealth
       value: 
@@ -849,6 +853,14 @@ PrefabInstance:
     - target: {fileID: 7594527264376414526, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Name
       value: UICanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655369421514974660, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381866412199544464, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8870181830817163294, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Pivot.x
