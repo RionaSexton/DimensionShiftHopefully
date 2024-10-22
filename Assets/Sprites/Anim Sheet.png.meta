@@ -1,0 +1,902 @@
+fileFormatVersion: 2
+guid: 7fcf7348ebc40c94485872fb2a9bca91
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3851746799416103150
+    second: Anim Sheet_0
+  - first:
+      213: 7950223141257660789
+    second: Anim Sheet_1
+  - first:
+      213: -2801133844577983933
+    second: Anim Sheet_2
+  - first:
+      213: 4932439751656880038
+    second: Anim Sheet_3
+  - first:
+      213: -1795832931447703434
+    second: Anim Sheet_4
+  - first:
+      213: -4736148056462201977
+    second: Anim Sheet_5
+  - first:
+      213: -5424528591202728424
+    second: Anim Sheet_6
+  - first:
+      213: 4270995744791922121
+    second: Anim Sheet_7
+  - first:
+      213: 249701815915048429
+    second: Anim Sheet_8
+  - first:
+      213: -3539272418819116949
+    second: Anim Sheet_9
+  - first:
+      213: 7831173366265354593
+    second: Anim Sheet_10
+  - first:
+      213: -56477723233080003
+    second: Anim Sheet_11
+  - first:
+      213: -8561702695420455820
+    second: Anim Sheet_12
+  - first:
+      213: 7743367445742220006
+    second: Anim Sheet_13
+  - first:
+      213: 3485904852260629749
+    second: Anim Sheet_14
+  - first:
+      213: 56540670751166049
+    second: Anim Sheet_15
+  - first:
+      213: -8793765144641580356
+    second: Anim Sheet_16
+  - first:
+      213: 2928260354753688005
+    second: Anim Sheet_17
+  - first:
+      213: -9071337266408575151
+    second: Anim Sheet_18
+  - first:
+      213: 981818881957965001
+    second: Anim Sheet_19
+  - first:
+      213: -4727787076445741172
+    second: Anim Sheet_20
+  - first:
+      213: 1418720266715690610
+    second: Anim Sheet_21
+  - first:
+      213: -3601660430439538780
+    second: Anim Sheet_22
+  - first:
+      213: -8900457178213839617
+    second: Anim Sheet_23
+  - first:
+      213: 6012889314321654038
+    second: Anim Sheet_24
+  - first:
+      213: 2374308997624230660
+    second: Anim Sheet_25
+  - first:
+      213: 2300221414148558405
+    second: Anim Sheet_26
+  - first:
+      213: 5184700886243151708
+    second: Anim Sheet_27
+  - first:
+      213: 8120863236277013171
+    second: Anim Sheet_28
+  - first:
+      213: 7051701634778230837
+    second: Anim Sheet_29
+  - first:
+      213: 9103127179208576664
+    second: Anim Sheet_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 270
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0d1ff7e47247530800000000000000
+      internalID: 3851746799416103150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 270
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579c0cb23ddd45e60800000000000000
+      internalID: 7950223141257660789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 222
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342ea910c9f5029d0800000000000000
+      internalID: -2801133844577983933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 222
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7368922db837440800000000000000
+      internalID: 4932439751656880038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 222
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6787c1da67be317e0800000000000000
+      internalID: -1795832931447703434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 174
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78be9e29f62d54eb0800000000000000
+      internalID: -4736148056462201977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 174
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81649679cf338b4b0800000000000000
+      internalID: -5424528591202728424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 174
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5078d4000a54b30800000000000000
+      internalID: 4270995744791922121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 174
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dede2658a7e177300800000000000000
+      internalID: 249701815915048429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 174
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60f2f8ac7af1eec0800000000000000
+      internalID: -3539272418819116949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 174
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1691fbe6faaedac60800000000000000
+      internalID: 7831173366265354593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 127
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d28f85fc9573ff0800000000000000
+      internalID: -56477723233080003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 127
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47495f6a2c8be2980800000000000000
+      internalID: -8561702695420455820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 127
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2f9c07aa7f57b60800000000000000
+      internalID: 7743367445742220006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 127
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc2ec77efb606030800000000000000
+      internalID: 3485904852260629749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 127
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e4c73c07fd8c000800000000000000
+      internalID: 56540670751166049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb25d6b313546f580800000000000000
+      internalID: -8793765144641580356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 26
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1f3fe274543a820800000000000000
+      internalID: 2928260354753688005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f24f571d22c1280800000000000000
+      internalID: -9071337266408575151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 15
+        width: 44
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc20ec321f10ad00800000000000000
+      internalID: 981818881957965001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fd4cee3b6836eb0800000000000000
+      internalID: -4727787076445741172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 15
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2767c3dd09e40b310800000000000000
+      internalID: 1418720266715690610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 51
+        width: 39
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af1212cbe4540ec0800000000000000
+      internalID: -3601660430439538780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 49
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc0df16a593b7480800000000000000
+      internalID: -8900457178213839617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61162e549f2127350800000000000000
+      internalID: 6012889314321654038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403f766247d33f020800000000000000
+      internalID: 2374308997624230660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e421760370cef10800000000000000
+      internalID: 2300221414148558405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f0d2f7cf1c3f740800000000000000
+      internalID: 5184700886243151708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 47
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba02d3561a13b070800000000000000
+      internalID: 8120863236277013171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5307ffa764dacd160800000000000000
+      internalID: 7051701634778230837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e4ee560fdc45e70800000000000000
+      internalID: 9103127179208576664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Anim Sheet_0: 3851746799416103150
+      Anim Sheet_1: 7950223141257660789
+      Anim Sheet_10: 7831173366265354593
+      Anim Sheet_11: -56477723233080003
+      Anim Sheet_12: -8561702695420455820
+      Anim Sheet_13: 7743367445742220006
+      Anim Sheet_14: 3485904852260629749
+      Anim Sheet_15: 56540670751166049
+      Anim Sheet_16: -8793765144641580356
+      Anim Sheet_17: 2928260354753688005
+      Anim Sheet_18: -9071337266408575151
+      Anim Sheet_19: 981818881957965001
+      Anim Sheet_2: -2801133844577983933
+      Anim Sheet_20: -4727787076445741172
+      Anim Sheet_21: 1418720266715690610
+      Anim Sheet_22: -3601660430439538780
+      Anim Sheet_23: -8900457178213839617
+      Anim Sheet_24: 6012889314321654038
+      Anim Sheet_25: 2374308997624230660
+      Anim Sheet_26: 2300221414148558405
+      Anim Sheet_27: 5184700886243151708
+      Anim Sheet_28: 8120863236277013171
+      Anim Sheet_29: 7051701634778230837
+      Anim Sheet_3: 4932439751656880038
+      Anim Sheet_30: 9103127179208576664
+      Anim Sheet_4: -1795832931447703434
+      Anim Sheet_5: -4736148056462201977
+      Anim Sheet_6: -5424528591202728424
+      Anim Sheet_7: 4270995744791922121
+      Anim Sheet_8: 249701815915048429
+      Anim Sheet_9: -3539272418819116949
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

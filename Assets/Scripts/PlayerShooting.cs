@@ -60,9 +60,14 @@ public class PlayerShooting : MonoBehaviour
 
             // Get the mouse position in world space
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 direction = (mousePosition - shootPoint.position).normalized; // Calculate the direction from player to mouse
 
-            // Set the projectile's velocity based on the direction
+            // Ensure the mouse position's Z value is 0 for 2D calculations
+            mousePosition.z = 0f;
+
+            // Calculate the direction from the shoot point to the mouse click position and normalize it
+            Vector2 direction = (mousePosition - shootPoint.position).normalized;
+
+            // Apply the normalized direction to the projectile's velocity with constant speed
             projectileRb.velocity = direction * projectileSpeed;
 
             // Optional: Call a coroutine to reset the attack animation state after a delay

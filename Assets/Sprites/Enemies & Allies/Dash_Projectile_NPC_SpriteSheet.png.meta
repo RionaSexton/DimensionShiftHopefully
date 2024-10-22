@@ -1,0 +1,795 @@
+fileFormatVersion: 2
+guid: e7e3481bbf7fdac4b8a323b39bc9c1f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5539319173472280544
+    second: Dash_Projectile_NPC_SpriteSheet_0
+  - first:
+      213: 8701931364376662576
+    second: Dash_Projectile_NPC_SpriteSheet_1
+  - first:
+      213: 8069236770755874461
+    second: Dash_Projectile_NPC_SpriteSheet_2
+  - first:
+      213: -5433018886436686883
+    second: Dash_Projectile_NPC_SpriteSheet_3
+  - first:
+      213: 2614229095891025320
+    second: Dash_Projectile_NPC_SpriteSheet_4
+  - first:
+      213: 9077668606042938214
+    second: Dash_Projectile_NPC_SpriteSheet_5
+  - first:
+      213: -3999141391994246896
+    second: Dash_Projectile_NPC_SpriteSheet_6
+  - first:
+      213: -4825691084709288879
+    second: Dash_Projectile_NPC_SpriteSheet_7
+  - first:
+      213: -2760230735403541470
+    second: Dash_Projectile_NPC_SpriteSheet_8
+  - first:
+      213: 4967488431139531130
+    second: Dash_Projectile_NPC_SpriteSheet_9
+  - first:
+      213: -7729804089905864273
+    second: Dash_Projectile_NPC_SpriteSheet_10
+  - first:
+      213: 8578248679385339718
+    second: Dash_Projectile_NPC_SpriteSheet_11
+  - first:
+      213: 348059406326694209
+    second: Dash_Projectile_NPC_SpriteSheet_12
+  - first:
+      213: 6299055155613561773
+    second: Dash_Projectile_NPC_SpriteSheet_13
+  - first:
+      213: -6596330032934776401
+    second: Dash_Projectile_NPC_SpriteSheet_14
+  - first:
+      213: -2212483327992207442
+    second: Dash_Projectile_NPC_SpriteSheet_15
+  - first:
+      213: 8133280450157153290
+    second: Dash_Projectile_NPC_SpriteSheet_16
+  - first:
+      213: 2432343478500733888
+    second: Dash_Projectile_NPC_SpriteSheet_17
+  - first:
+      213: -4722778203938261068
+    second: Dash_Projectile_NPC_SpriteSheet_18
+  - first:
+      213: 131996104972252592
+    second: Dash_Projectile_NPC_SpriteSheet_19
+  - first:
+      213: 6385314948271586633
+    second: Dash_Projectile_NPC_SpriteSheet_20
+  - first:
+      213: -293782993007638484
+    second: Dash_Projectile_NPC_SpriteSheet_21
+  - first:
+      213: 4236617488661097806
+    second: Dash_Projectile_NPC_SpriteSheet_22
+  - first:
+      213: 7529981311587126995
+    second: Dash_Projectile_NPC_SpriteSheet_23
+  - first:
+      213: 9015633547650210008
+    second: Dash_Projectile_NPC_SpriteSheet_24
+  - first:
+      213: 5812526187310314817
+    second: Dash_Projectile_NPC_SpriteSheet_25
+  - first:
+      213: 2146416402732457423
+    second: Dash_Projectile_NPC_SpriteSheet_26
+  - first:
+      213: -3486099218774296633
+    second: Dash_Projectile_NPC_SpriteSheet_27
+  - first:
+      213: -7566412012871417014
+    second: Dash_Projectile_NPC_SpriteSheet_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020acaf6f826023b0800000000000000
+      internalID: -5539319173472280544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0325089987873c870800000000000000
+      internalID: 8701931364376662576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e8c612710bbff60800000000000000
+      internalID: 8069236770755874461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3f3ffab1a0a94b0800000000000000
+      internalID: -5433018886436686883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad331e038b974420800000000000000
+      internalID: 2614229095891025320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b97eb608b5afd70800000000000000
+      internalID: 9077668606042938214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0192f93a7123088c0800000000000000
+      internalID: -3999141391994246896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154222ca683b70db0800000000000000
+      internalID: -4825691084709288879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c182e35c0b1b9d0800000000000000
+      internalID: -2760230735403541470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a792fe3c86010f440800000000000000
+      internalID: 4967488431139531130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1accd62283ab490800000000000000
+      internalID: -7729804089905864273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6471ab179bf0c0770800000000000000
+      internalID: 8578248679385339718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14106da9f2e84d400800000000000000
+      internalID: 348059406326694209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da370fa4a4dba6750800000000000000
+      internalID: 6299055155613561773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa19eada8c02574a0800000000000000
+      internalID: -6596330032934776401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7ec8ba22eab41e0800000000000000
+      internalID: -2212483327992207442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c0f3a3a773fd070800000000000000
+      internalID: 8133280450157153290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c336cfa18b61c120800000000000000
+      internalID: 2432343478500733888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b77d41fe32557eb0800000000000000
+      internalID: -4722778203938261068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b53b9412c1f4d100800000000000000
+      internalID: 131996104972252592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d38b65d123d9850800000000000000
+      internalID: 6385314948271586633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c288ab4ace54cebf0800000000000000
+      internalID: -293782993007638484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d2adcc82d7bca30800000000000000
+      internalID: 4236617488661097806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de0b7a7b1edf7860800000000000000
+      internalID: 7529981311587126995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d819c8d1f6fd1d70800000000000000
+      internalID: 9015633547650210008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145794275cd3aa050800000000000000
+      internalID: 5812526187310314817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dash_Projectile_NPC_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd90f8985a99cd10800000000000000
+      internalID: 2146416402732457423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 33efb7e9d007a0149ba80e22b9fda56d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dash_Projectile_NPC_SpriteSheet_0: -5539319173472280544
+      Dash_Projectile_NPC_SpriteSheet_1: 8701931364376662576
+      Dash_Projectile_NPC_SpriteSheet_10: -7729804089905864273
+      Dash_Projectile_NPC_SpriteSheet_11: 8578248679385339718
+      Dash_Projectile_NPC_SpriteSheet_12: 348059406326694209
+      Dash_Projectile_NPC_SpriteSheet_13: 6299055155613561773
+      Dash_Projectile_NPC_SpriteSheet_14: -6596330032934776401
+      Dash_Projectile_NPC_SpriteSheet_15: -2212483327992207442
+      Dash_Projectile_NPC_SpriteSheet_16: 8133280450157153290
+      Dash_Projectile_NPC_SpriteSheet_17: 2432343478500733888
+      Dash_Projectile_NPC_SpriteSheet_18: -4722778203938261068
+      Dash_Projectile_NPC_SpriteSheet_19: 131996104972252592
+      Dash_Projectile_NPC_SpriteSheet_2: 8069236770755874461
+      Dash_Projectile_NPC_SpriteSheet_20: 6385314948271586633
+      Dash_Projectile_NPC_SpriteSheet_21: -293782993007638484
+      Dash_Projectile_NPC_SpriteSheet_22: 4236617488661097806
+      Dash_Projectile_NPC_SpriteSheet_23: 7529981311587126995
+      Dash_Projectile_NPC_SpriteSheet_24: 9015633547650210008
+      Dash_Projectile_NPC_SpriteSheet_25: 5812526187310314817
+      Dash_Projectile_NPC_SpriteSheet_26: 2146416402732457423
+      Dash_Projectile_NPC_SpriteSheet_3: -5433018886436686883
+      Dash_Projectile_NPC_SpriteSheet_4: 2614229095891025320
+      Dash_Projectile_NPC_SpriteSheet_5: 9077668606042938214
+      Dash_Projectile_NPC_SpriteSheet_6: -3999141391994246896
+      Dash_Projectile_NPC_SpriteSheet_7: -4825691084709288879
+      Dash_Projectile_NPC_SpriteSheet_8: -2760230735403541470
+      Dash_Projectile_NPC_SpriteSheet_9: 4967488431139531130
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
