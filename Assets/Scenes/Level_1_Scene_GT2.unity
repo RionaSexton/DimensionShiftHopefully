@@ -486,6 +486,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &167012518 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1526683641178558578, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+  m_PrefabInstance: {fileID: 358370642637891434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &194159775
 GameObject:
   m_ObjectHideFlags: 0
@@ -12572,10 +12583,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 218959274520322713, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 218959274520322713, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 57.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 218959274520322713, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.4551086
+      objectReference: {fileID: 0}
+    - target: {fileID: 218959274520322713, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -662
+      objectReference: {fileID: 0}
+    - target: {fileID: 218959274520322713, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 434.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 456967307254664783, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 308358841214509857, guid: 87ee6bc9ec1feeb4c930a3e8a81d2a78, type: 3}
+    - target: {fileID: 456967307254664783, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 651046841080034581, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1378181626, guid: 49140fcce3c573a4d9ea9d9cfff25b40, type: 3}
+    - target: {fileID: 734004959298744839, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1270011487409450602, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -12592,6 +12635,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1526683641178558578, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1563097705597696159, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -12605,6 +12652,10 @@ PrefabInstance:
       value: BlueShroomFull
       objectReference: {fileID: 0}
     - target: {fileID: 2504248843998276864, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729316722216515141, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -12636,6 +12687,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6066544274369737036, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066544274369737036, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 57.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066544274369737036, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -662
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066544274369737036, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 423
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116207411250029507, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7060989050711619525, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -12644,6 +12715,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 8394035419523290385}
+    - target: {fileID: 7165160369194707751, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: currenthealthBar
+      value: 
+      objectReference: {fileID: 167012518}
     - target: {fileID: 7594527264376414526, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Name
       value: UICanvas
@@ -12671,6 +12746,22 @@ PrefabInstance:
     - target: {fileID: 8381866412199544464, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Name
       value: EmptyShroom1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8386109533165264207, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5727453261561735673, guid: 87ee6bc9ec1feeb4c930a3e8a81d2a78, type: 3}
+    - target: {fileID: 8386109533165264207, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8386109533165264207, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8386109533165264207, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8673838008506444880, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -12761,7 +12852,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2729316722216515141, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
@@ -73834,7 +73926,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 15420172280131870, guid: 43b5fe9ef34a83d459c9ea5593f16f71, type: 3}
       propertyPath: m_Name
-      value: Enemy_Projectile (1)
+      value: Enemy_Projectile
       objectReference: {fileID: 0}
     - target: {fileID: 1723684085227461659, guid: 43b5fe9ef34a83d459c9ea5593f16f71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73842,7 +73934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1723684085227461659, guid: 43b5fe9ef34a83d459c9ea5593f16f71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.4
+      value: -5.06
       objectReference: {fileID: 0}
     - target: {fileID: 1723684085227461659, guid: 43b5fe9ef34a83d459c9ea5593f16f71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -73876,6 +73968,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3620373327538526212, guid: 43b5fe9ef34a83d459c9ea5593f16f71, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5539319173472280544, guid: e7e3481bbf7fdac4b8a323b39bc9c1f0, type: 3}
     - target: {fileID: 8858270723137891514, guid: 43b5fe9ef34a83d459c9ea5593f16f71, type: 3}
       propertyPath: player
       value: 
