@@ -18,6 +18,7 @@ public class DashEnemyMovement : MonoBehaviour
     public float maxJumpableHeight = 2f;     // Max height the enemy can jump over
 
     private Rigidbody2D rb;
+    private Animator animator;
     private bool isGrounded;
     private Vector2 movementDirection = Vector2.right; // Start moving right
 
@@ -33,7 +34,9 @@ public class DashEnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
+        animator = GetComponent<Animator>();
         lastDashTime = -dashCooldown; // Initialize to allow immediate first dash
+        FlipSprite((int)movementDirection.x * -1);
     }
 
     private void Update()
@@ -64,6 +67,17 @@ public class DashEnemyMovement : MonoBehaviour
             isChasing = false;
             Wander();
         }
+
+        UpdateAnimations();
+    }
+
+    private void UpdateAnimations()
+    {
+        // Walking animation
+        animator.SetBool("isWalking", !isDashing && rb.velocity.magnitude > 0);
+
+        // Attacking animation
+        animator.SetBool("isAttacking", isDashing);
     }
 
     private bool IsGrounded()
@@ -95,7 +109,7 @@ public class DashEnemyMovement : MonoBehaviour
             {
                 // Turn around if the wall is too high
                 movementDirection *= -1; // Reverse direction
-                FlipSprite();
+                FlipSprite((int)movementDirection.x * -1);
                 Debug.Log("Wall too high, turning around.");
             }
         }
@@ -121,11 +135,13 @@ public class DashEnemyMovement : MonoBehaviour
         {
             if (transform.position.x < player.position.x)
             {
-                movementDirection = Vector2.right; // Move right
+                movementDirection = Vector2.right;
+                FlipSprite(-1); // Move right
             }
             else
             {
-                movementDirection = Vector2.left; // Move left
+                movementDirection = Vector2.left; 
+                FlipSprite(1); // Move left
             }
 
             rb.velocity = new Vector2(movementDirection.x * moveSpeed, rb.velocity.y);
@@ -139,7 +155,7 @@ public class DashEnemyMovement : MonoBehaviour
         isDashing = true; // Set dashing flag
 
         // Set enemy scale
-        transform.localScale = new Vector3(2f, 1.6f, 1f);
+
 
         // Flash the alpha of the sprite renderer
         yield return StartCoroutine(FlashSprite());
@@ -173,7 +189,6 @@ public class DashEnemyMovement : MonoBehaviour
         lastDashTime = Time.time; // Record the time of this dash
 
         // Reset the scale back to normal
-        transform.localScale = new Vector3(2f, 2f, 1f);
 
         // Stay frozen for 1 second after the dash
         yield return new WaitForSeconds(1f); // Freeze for 1 second
@@ -200,12 +215,18 @@ public class DashEnemyMovement : MonoBehaviour
         }
     }
 
-    private void FlipSprite()
+    private void FlipSprite(int direction)
     {
         // Flip the sprite to face the movement direction
         Vector3 theScale = transform.localScale;
-        theScale.x *= -1; // Flip the x scale
-        transform.localScale = theScale;
+        if(direction > 0){
+            transform.localScale = new Vector3(4f,4f,1f);
+        }
+        if(direction < 0){
+            transform.localScale = new Vector3(-4f,4f,1f);
+        }
+            // Flip the x scale
+        
     }
 
     private void OnDrawGizmos()

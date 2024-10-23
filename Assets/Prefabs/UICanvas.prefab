@@ -253,7 +253,7 @@ RectTransform:
   m_Father: {fileID: 8500610613223088023}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -287,81 +287,6 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &734004959298744839
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 218959274520322713}
-  - component: {fileID: 2736910986967963896}
-  - component: {fileID: 8386109533165264207}
-  m_Layer: 5
-  m_Name: HealthbarTotal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &218959274520322713
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734004959298744839}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2100477518429658432}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -676.13324, y: 443}
-  m_SizeDelta: {x: 132.5689, y: 78.4128}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2736910986967963896
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734004959298744839}
-  m_CullTransparentMesh: 1
---- !u!114 &8386109533165264207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734004959298744839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 95e9445bb9c842f47969883ff2704f4a, type: 3}
-  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -457,7 +382,7 @@ GameObject:
   - component: {fileID: 2576090992660792079}
   - component: {fileID: 1270011487409450602}
   m_Layer: 5
-  m_Name: PurpleDiamondFull
+  m_Name: PurpleShroomFull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,7 +435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -952665540968194789, guid: 094b1641bc29f3641b4463dbfa648603, type: 3}
+  m_Sprite: {fileID: -1422223223, guid: 49140fcce3c573a4d9ea9d9cfff25b40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -877,7 +802,7 @@ GameObject:
   - component: {fileID: 5008858495850806117}
   - component: {fileID: 3546945183550597215}
   m_Layer: 5
-  m_Name: BlueDiamondFull
+  m_Name: BlueShroomFull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -930,7 +855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 940978193364733561, guid: 9b2b46b5fd75de948b028205cea9ac91, type: 3}
+  m_Sprite: {fileID: 764189142, guid: 49140fcce3c573a4d9ea9d9cfff25b40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1144,7 +1069,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &2729316722216515141
+--- !u!1 &2637416182322672263
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1152,50 +1077,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6066544274369737036}
-  - component: {fileID: 135809588233072126}
-  - component: {fileID: 456967307254664783}
+  - component: {fileID: 7420133924751170726}
+  - component: {fileID: 6416669984655718262}
+  - component: {fileID: 1036054369908018163}
   m_Layer: 5
-  m_Name: HealthbarCurrent
+  m_Name: HealthbarTotal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6066544274369737036
+--- !u!224 &7420133924751170726
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729316722216515141}
+  m_GameObject: {fileID: 2637416182322672263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2100477518429658432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -676, y: 443}
-  m_SizeDelta: {x: 199.8093, y: 78.4128}
+  m_AnchoredPosition: {x: -698, y: 434.88065}
+  m_SizeDelta: {x: 165.1254, y: 64.8013}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &135809588233072126
+--- !u!222 &6416669984655718262
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729316722216515141}
+  m_GameObject: {fileID: 2637416182322672263}
   m_CullTransparentMesh: 1
---- !u!114 &456967307254664783
+--- !u!114 &1036054369908018163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729316722216515141}
+  m_GameObject: {fileID: 2637416182322672263}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -1209,9 +1134,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 95e9445bb9c842f47969883ff2704f4a, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 1
+  m_Sprite: {fileID: 2088344870726217828, guid: e077ee01258affa44a476714749b685f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
   m_FillAmount: 1
@@ -1523,8 +1448,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5305028702613608294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1578,7 +1503,7 @@ GameObject:
   - component: {fileID: 6548314878542828224}
   - component: {fileID: 1640477352053385905}
   m_Layer: 5
-  m_Name: EmptyDiamond2
+  m_Name: EmptyShroom2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1631,7 +1556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5668027127477763051, guid: c4d4fa89017fd7a49939ae7ec1ad74c4, type: 3}
+  m_Sprite: {fileID: -1378181626, guid: 49140fcce3c573a4d9ea9d9cfff25b40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2114,9 +2039,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 218959274520322713}
+  - {fileID: 7420133924751170726}
   - {fileID: 5202024160614411138}
-  - {fileID: 6066544274369737036}
   - {fileID: 8469949454673388847}
   m_Father: {fileID: 8870181830817163294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2138,8 +2062,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
-  totalhealthBar: {fileID: 8386109533165264207}
-  currenthealthBar: {fileID: 456967307254664783}
+  totalhealthBar: {fileID: 1036054369908018163}
+  currenthealthBar: {fileID: 1526683641178558578}
 --- !u!1 &5123529735018906443
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,7 +2397,7 @@ GameObject:
   - component: {fileID: 1603082084460197861}
   - component: {fileID: 651046841080034581}
   m_Layer: 5
-  m_Name: EmptyDiamond3
+  m_Name: EmptyShroom3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2526,7 +2450,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5668027127477763051, guid: c4d4fa89017fd7a49939ae7ec1ad74c4, type: 3}
+  m_Sprite: {fileID: -1378181626, guid: 49140fcce3c573a4d9ea9d9cfff25b40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2764,15 +2688,15 @@ RectTransform:
   m_GameObject: {fileID: 6116207411250029507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2100477518429658432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -900.7, y: 445.1}
-  m_SizeDelta: {x: 438.1119, y: 78.4128}
+  m_AnchoredPosition: {x: -869.91425, y: 429.8253}
+  m_SizeDelta: {x: 155.537, y: 120.4233}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7133438182277337820
 CanvasRenderer:
@@ -2802,8 +2726,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 391cae48aac5936409b0ef8985654047, type: 3}
-  m_Type: 3
+  m_Sprite: {fileID: 4606908045521496030, guid: 79c1a7ca060b2274b80ecb575e352440, type: 3}
+  m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
@@ -3407,7 +3331,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -3477,7 +3401,7 @@ GameObject:
   - component: {fileID: 6225130043209642567}
   - component: {fileID: 7060989050711619525}
   m_Layer: 5
-  m_Name: PinkDiamondFull
+  m_Name: PinkShroomFull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3530,7 +3454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7692589919481524942, guid: 181d3b901e0ed034fadb6e05e6938ac0, type: 3}
+  m_Sprite: {fileID: -9028049388624206356, guid: 49140fcce3c573a4d9ea9d9cfff25b40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3773,7 +3697,7 @@ GameObject:
   - component: {fileID: 1778177350996235618}
   - component: {fileID: 1563097705597696159}
   m_Layer: 5
-  m_Name: EmptyDiamond1
+  m_Name: EmptyShroom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3826,7 +3750,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5668027127477763051, guid: c4d4fa89017fd7a49939ae7ec1ad74c4, type: 3}
+  m_Sprite: {fileID: -1378181626, guid: 49140fcce3c573a4d9ea9d9cfff25b40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3944,15 +3868,15 @@ RectTransform:
   m_GameObject: {fileID: 8558827091741033312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 2.4551086, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2100477518429658432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662, y: 434.1}
-  m_SizeDelta: {x: 145.71, y: 57.182}
+  m_AnchoredPosition: {x: -698.00006, y: 434.88065}
+  m_SizeDelta: {x: 165.1254, y: 64.8013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5808921710723308340
 CanvasRenderer:
@@ -3982,7 +3906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 308358841214509857, guid: 87ee6bc9ec1feeb4c930a3e8a81d2a78, type: 3}
+  m_Sprite: {fileID: -895193208314145225, guid: a9daf85b7e3e39f47b1f31a4843e9b4d, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class SceneResetOnTrigger : MonoBehaviour
+public class Death : MonoBehaviour
 {
     public string playerTag = "Player"; // Tag to identify the player
     public Transform spriteTransform; // Reference to the player's sprite

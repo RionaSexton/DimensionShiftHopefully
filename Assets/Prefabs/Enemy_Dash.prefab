@@ -158,8 +158,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0006801486, y: 0.006717056}
-  m_Radius: 0.20691219
+  m_Offset: {x: -0.0014518499, y: -0.030752733}
+  m_Radius: 0.13622351
 --- !u!114 &4422388006811486437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,15 +174,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   jumpForce: 6
-  chaseDistance: 3
-  attackDistance: 1.5
+  chaseDistance: 6
+  attackDistance: 3
   dashSpeed: 8
   dashDuration: 0.3
   dashCooldown: 1
   groundCheck: {fileID: 4991283696790952095}
   wallCheck: {fileID: 8785468232303531981}
   groundCheckDistance: 0.6
-  wallCheckDistance: 0.6
+  wallCheckDistance: 0.84
   maxJumpableHeight: 1
   player: {fileID: 0}
 --- !u!50 &8575357642449303371
@@ -332,7 +332,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.65437126, y: -0.24416861}
+  m_Offset: {x: 0.6395035, y: -0.33125594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -342,7 +342,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.91773605, y: 0.7504249}
+  m_Size: {x: 0.5991211, y: 0.57625026}
   m_EdgeRadius: 0
 --- !u!114 &2222564719755808824
 MonoBehaviour:

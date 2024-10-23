@@ -17,6 +17,7 @@ public class ProjectileEnemyMovement : MonoBehaviour
     public float maxJumpableHeight = 2f;      // Max height the enemy can jump over
 
     private Rigidbody2D rb;
+    private Animator animator;
     private bool isGrounded;
     private Vector2 movementDirection = Vector2.right; // Start moving right
     public Transform player; // Reference to the player's transform
@@ -29,6 +30,7 @@ public class ProjectileEnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
+        animator = GetComponent<Animator>(); // Get the Animator component
         lastProjectileTime = -projectileCooldown; // Initialize to allow immediate first shot
         playerHealth = player.GetComponent<Health>(); // Get the Health component from the player
     }
@@ -134,6 +136,7 @@ public class ProjectileEnemyMovement : MonoBehaviour
 
         // Create a new projectile instance
         GameObject projectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
+        animator.SetTrigger("isAttacking");
 
         // Pass the calculated direction to the projectile
         Projectile projectileScript = projectile.GetComponent<Projectile>();

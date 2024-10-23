@@ -141,7 +141,7 @@ Animator:
   m_GameObject: {fileID: 1818912887870696621}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b09c95d23d32d0548aa0f3b0c5501390, type: 2}
+  m_Controller: {fileID: 9100000, guid: 884e48adcb7538247be1291749c94942, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5114520101744378692, guid: 276d22f95333d084081d762416dd0153, type: 3}
   shootPoint: {fileID: 5111843974352359631}
-  projectileSpeed: 6
+  projectileSpeed: 10
   spriteTransform: {fileID: 3206312540616359020}
   soundClip: {fileID: 8300000, guid: 06bbd9d6ba8f8aa41b9db5d3b303db15, type: 3}
   shootCooldown: 0.6
