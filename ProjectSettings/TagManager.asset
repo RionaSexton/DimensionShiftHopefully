@@ -9,6 +9,13 @@ TagManager:
   - Enemy
   - DimensionATag
   - DimensionBTag
+  - RedDoor1
+  - RedDoor2
+  - GreenDoor1
+  - GreenDoor2
+  - RedKey
+  - GreenKey
+  - RedDoor3
   layers:
   - Default
   - TransparentFX
