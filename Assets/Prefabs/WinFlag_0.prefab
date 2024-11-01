@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2098580ad06e9e498d97b0bb8848ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic: {fileID: 0}
-  triumphantMusic: {fileID: 0}
-  player: {fileID: 0}
+  backgroundMusic: {fileID: 1341341651073182117, guid: d227ada93c22750408db147a20d83308, type: 3}
+  triumphantMusic: {fileID: 4983954096116236799, guid: 58a26bdef8b754c4aa47fd63e6203366, type: 3}
+  player: {fileID: 4624356116049005327, guid: 8e3e0ef0670f23f46b64c70447d552df, type: 3}
   delayBeforeNextLevel: 2.5
