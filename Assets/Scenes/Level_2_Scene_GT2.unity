@@ -3202,6 +3202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageInterval: 2
   damageAmount: 1
+  enemyHealth: 1
 --- !u!1001 &1868344126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3984,40 +3985,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5430584672938089409, guid: f1df8401951a8414c9d8b04cd5a69648, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 69474081173590930}
     - targetCorrespondingSourceObject: {fileID: 7988402338752148674, guid: f1df8401951a8414c9d8b04cd5a69648, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1830207269}
   m_SourcePrefab: {fileID: 100100000, guid: f1df8401951a8414c9d8b04cd5a69648, type: 3}
---- !u!1 &69474081173590929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5430584672938089409, guid: f1df8401951a8414c9d8b04cd5a69648, type: 3}
-  m_PrefabInstance: {fileID: 69474081173590928}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &69474081173590930
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69474081173590929}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5b45c6c00704dff4486856959f65bc02, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &9116747965410981792
 PrefabInstance:
   m_ObjectHideFlags: 0
