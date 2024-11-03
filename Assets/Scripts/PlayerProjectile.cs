@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerProjectile : MonoBehaviour
 {
-    public float lifetime = 0.5f; // Time in seconds before the projectile is destroyed
-    public float destroyDelay = 0.6f; // Delay to wait before destroying gameobject
+    public float lifetime = 0.5f;       // Time in seconds before the projectile is destroyed
+    public float destroyDelay = 0.6f;   // Delay to wait before destroying the enemy GameObject
 
     private void Start()
     {
@@ -17,14 +17,19 @@ public class PlayerProjectile : MonoBehaviour
         // Check if the projectile hits an enemy
         if (other.CompareTag("Enemy"))
         {
-            Animator enemyAnimator = other.GetComponent<Animator>();
-            if(enemyAnimator != null)
+            // Avoid triggering 'Die' if the enemy has its own custom death behavior
+            if (other.GetComponent<EnemyMistAttack>() == null)
             {
-                // Trigger the death animation
-                enemyAnimator.SetTrigger("Die");
-                // Destroy the enemy after the animation delay
-                Destroy(other.gameObject, destroyDelay);
+                Animator enemyAnimator = other.GetComponent<Animator>();
+                if (enemyAnimator != null)
+                {
+                    // Trigger the death animation
+                    enemyAnimator.SetTrigger("Die");
+                    // Destroy the enemy after the animation delay
+                    Destroy(other.gameObject, destroyDelay);
+                }
             }
+            
             Destroy(gameObject); // Destroy the projectile
         }
 
