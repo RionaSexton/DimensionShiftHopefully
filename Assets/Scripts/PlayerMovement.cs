@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public CircleCollider2D crouchingCollider;    // Reference to the circle collider used when crouching
 
     public AudioClip footstepSound;           // Footstep sound clip
-    private AudioSource footstepAudioSource;          // Reference to the AudioSource component
+    private AudioSource footstepAudioSource;  // Reference to the AudioSource component
 
     private float footstepCooldown = 0.5f;    // Time between footsteps
     private float lastFootstepTime = 0f;      // Time when the last footstep sound was played
@@ -28,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
     public float acceleration = 10f;          // Acceleration rate
     public float deceleration = 15f;          // Deceleration rate
     private float currentSpeed = 0f;          // The player's current horizontal speed
+
+    // Jump cooldown variables
+    public float jumpCooldown = 1.0f;         // Cooldown duration in seconds (adjustable in Inspector)
+    private float lastJumpTime = -1.0f;       // Time of the last jump
 
     void Start()
     {
@@ -88,7 +92,12 @@ public class PlayerMovement : MonoBehaviour
         // Jumping mechanic (W or Space to jump)
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            Jump();
+            // Check if enough time has passed since the last jump
+            if (Time.time >= lastJumpTime + jumpCooldown)
+            {
+                Jump();
+                lastJumpTime = Time.time; // Update the last jump time
+            }
         }
 
         // Check player's velocity so jump anim plays in full
