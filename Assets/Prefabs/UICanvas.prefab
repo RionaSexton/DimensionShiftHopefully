@@ -1103,8 +1103,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -698, y: 434.88065}
-  m_SizeDelta: {x: 165.1254, y: 64.8013}
+  m_AnchoredPosition: {x: -587, y: 430.4}
+  m_SizeDelta: {x: 275.45, y: 59.068}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6416669984655718262
 CanvasRenderer:
@@ -2061,7 +2061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7584b9ba05609104e8a6b57971443fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 8491261995462180057, guid: 8e3e0ef0670f23f46b64c70447d552df, type: 3}
   totalhealthBar: {fileID: 1036054369908018163}
   currenthealthBar: {fileID: 1526683641178558578}
 --- !u!1 &5123529735018906443
@@ -3875,8 +3875,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -698.00006, y: 434.88065}
-  m_SizeDelta: {x: 165.1254, y: 64.8013}
+  m_AnchoredPosition: {x: -587, y: 430.4}
+  m_SizeDelta: {x: 275.45, y: 59.068}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5808921710723308340
 CanvasRenderer:

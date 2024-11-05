@@ -184,7 +184,7 @@ MonoBehaviour:
   groundCheckDistance: 0.6
   wallCheckDistance: 0.84
   maxJumpableHeight: 1
-  player: {fileID: 0}
+  player: {fileID: 6323116449331623463, guid: 8e3e0ef0670f23f46b64c70447d552df, type: 3}
 --- !u!50 &8575357642449303371
 Rigidbody2D:
   serializedVersion: 4
