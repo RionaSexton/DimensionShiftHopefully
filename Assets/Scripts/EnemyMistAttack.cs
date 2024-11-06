@@ -12,6 +12,8 @@ public class EnemyMistAttack : MonoBehaviour
     private float nextDamageTime;
     private GameObject player;
     private MistEnemyAnim animationController;
+    public GameObject mist1;
+    public GameObject mist2;
 
     private void Start()
     {
@@ -30,6 +32,8 @@ public class EnemyMistAttack : MonoBehaviour
             playerInMist = true;
             player = other.gameObject;
             nextDamageTime = Time.time + damageInterval;
+            mist1.gameObject.SetActive(true);
+            mist2.gameObject.SetActive(true);
 
             // Trigger attack animation on the parent controller
             animationController?.PlayAttackAnimation();
@@ -43,7 +47,9 @@ public class EnemyMistAttack : MonoBehaviour
         {
             playerInMist = false;
             player = null;
-            
+            mist1.gameObject.SetActive(false);
+            mist2.gameObject.SetActive(false);
+
             // Reset attack animation on the parent controller
             animationController?.ResetAttackAnimation();
         }
