@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -5539319173472280544, guid: e7e3481bbf7fdac4b8a323b39bc9c1f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -173,15 +173,15 @@ MonoBehaviour:
   jumpForce: 6
   chaseDistance: 16
   attackDistance: 10
-  projectileCooldown: 0.5
-  projectilePrefab: {fileID: 0}
+  projectileCooldown: 1
+  projectilePrefab: {fileID: 6928967634519202630, guid: 7560b8ad85badfb4d908c7b75e12e02e, type: 3}
   projectileSpawnPoint: {fileID: 1441200714875344074}
   groundCheck: {fileID: 4324170899927154383}
   wallCheck: {fileID: 4179964960526744885}
   groundCheckDistance: 0.6
   wallCheckDistance: 0.85
   maxJumpableHeight: 2
-  player: {fileID: 6323116449331623463, guid: 8e3e0ef0670f23f46b64c70447d552df, type: 3}
+  player: {fileID: 0}
 --- !u!95 &311897051871950492
 Animator:
   serializedVersion: 7

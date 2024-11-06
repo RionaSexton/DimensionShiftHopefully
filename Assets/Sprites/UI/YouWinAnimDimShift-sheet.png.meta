@@ -1,0 +1,736 @@
+fileFormatVersion: 2
+guid: 9d942798d34e4104d88b8b9d0b475c40
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -203771547525809381
+    second: YouWinAnimDimShift-sheet_0
+  - first:
+      213: 3324029460872940965
+    second: YouWinAnimDimShift-sheet_1
+  - first:
+      213: -8741373022270626620
+    second: YouWinAnimDimShift-sheet_2
+  - first:
+      213: 7056166452865459579
+    second: YouWinAnimDimShift-sheet_3
+  - first:
+      213: -8743119643875774803
+    second: YouWinAnimDimShift-sheet_4
+  - first:
+      213: -2597362031711149702
+    second: YouWinAnimDimShift-sheet_5
+  - first:
+      213: 1779301909248646097
+    second: YouWinAnimDimShift-sheet_6
+  - first:
+      213: 574449721746069360
+    second: YouWinAnimDimShift-sheet_7
+  - first:
+      213: 2910507036922536091
+    second: YouWinAnimDimShift-sheet_8
+  - first:
+      213: -3388774085996945408
+    second: YouWinAnimDimShift-sheet_9
+  - first:
+      213: -3285768483075315050
+    second: YouWinAnimDimShift-sheet_10
+  - first:
+      213: 3570164340712067824
+    second: YouWinAnimDimShift-sheet_11
+  - first:
+      213: -1099296965889874643
+    second: YouWinAnimDimShift-sheet_12
+  - first:
+      213: 8278313613081273524
+    second: YouWinAnimDimShift-sheet_13
+  - first:
+      213: -1661692500469493197
+    second: YouWinAnimDimShift-sheet_14
+  - first:
+      213: -8821974737045348856
+    second: YouWinAnimDimShift-sheet_15
+  - first:
+      213: 4529089790122427545
+    second: YouWinAnimDimShift-sheet_16
+  - first:
+      213: 7662203822831854046
+    second: YouWinAnimDimShift-sheet_17
+  - first:
+      213: 3297854539682989990
+    second: YouWinAnimDimShift-sheet_18
+  - first:
+      213: -8128019792588887467
+    second: YouWinAnimDimShift-sheet_19
+  - first:
+      213: 7455203445423195049
+    second: YouWinAnimDimShift-sheet_20
+  - first:
+      213: -4055357326502239219
+    second: YouWinAnimDimShift-sheet_21
+  - first:
+      213: 5711122654320495648
+    second: YouWinAnimDimShift-sheet_22
+  - first:
+      213: -2845363181171090442
+    second: YouWinAnimDimShift-sheet_23
+  - first:
+      213: -3815957341548297655
+    second: YouWinAnimDimShift-sheet_24
+  - first:
+      213: -359829907179316073
+    second: YouWinAnimDimShift-sheet_25
+  - first:
+      213: 7602411123402519970
+    second: YouWinAnimDimShift-sheet_26
+  - first:
+      213: -1658366938361493419
+    second: YouWinAnimDimShift-sheet_27
+  - first:
+      213: -1662434835317224694
+    second: YouWinAnimDimShift-sheet_28
+  - first:
+      213: 5899395515851011861
+    second: YouWinAnimDimShift-sheet_29
+  - first:
+      213: 2805868762940692563
+    second: YouWinAnimDimShift-sheet_30
+  - first:
+      213: 3876536972600371917
+    second: YouWinAnimDimShift-sheet_31
+  - first:
+      213: 3069308535642518592
+    second: YouWinAnimDimShift-sheet_32
+  - first:
+      213: 2846261318635256588
+    second: YouWinAnimDimShift-sheet_33
+  - first:
+      213: -4756441435072829726
+    second: YouWinAnimDimShift-sheet_34
+  - first:
+      213: -2370413196317012225
+    second: YouWinAnimDimShift-sheet_35
+  - first:
+      213: -2198945054520830870
+    second: YouWinAnimDimShift-sheet_36
+  - first:
+      213: -1763179553962392489
+    second: YouWinAnimDimShift-sheet_37
+  - first:
+      213: -2045722079502784959
+    second: YouWinAnimDimShift-sheet_38
+  - first:
+      213: 3681225951290277858
+    second: YouWinAnimDimShift-sheet_39
+  - first:
+      213: 6545705692275626191
+    second: YouWinAnimDimShift-sheet_40
+  - first:
+      213: 2567957418430737359
+    second: YouWinAnimDimShift-sheet_41
+  - first:
+      213: 7009736984169994759
+    second: YouWinAnimDimShift-sheet_42
+  - first:
+      213: 5277998672217898794
+    second: YouWinAnimDimShift-sheet_43
+  - first:
+      213: 4220136386403558126
+    second: YouWinAnimDimShift-sheet_44
+  - first:
+      213: 2234872293595674432
+    second: YouWinAnimDimShift-sheet_45
+  - first:
+      213: -2232768494018645443
+    second: YouWinAnimDimShift-sheet_46
+  - first:
+      213: -4634020011804863129
+    second: YouWinAnimDimShift-sheet_47
+  - first:
+      213: 2359523452567636232
+    second: YouWinAnimDimShift-sheet_48
+  - first:
+      213: 2520191885292246999
+    second: YouWinAnimDimShift-sheet_49
+  - first:
+      213: -6661107204117846783
+    second: YouWinAnimDimShift-sheet_50
+  - first:
+      213: -1034209061910182851
+    second: YouWinAnimDimShift-sheet_51
+  - first:
+      213: -631358044116595893
+    second: YouWinAnimDimShift-sheet_52
+  - first:
+      213: -6179300462493209139
+    second: YouWinAnimDimShift-sheet_53
+  - first:
+      213: 3133763781614536485
+    second: YouWinAnimDimShift-sheet_54
+  - first:
+      213: 3185096349862678843
+    second: YouWinAnimDimShift-sheet_55
+  - first:
+      213: 2423135176461295100
+    second: YouWinAnimDimShift-sheet_56
+  - first:
+      213: -4566013022459619316
+    second: YouWinAnimDimShift-sheet_57
+  - first:
+      213: -7975958958574876069
+    second: YouWinAnimDimShift-sheet_58
+  - first:
+      213: -7733761253727160243
+    second: YouWinAnimDimShift-sheet_59
+  - first:
+      213: 3449119342625546710
+    second: YouWinAnimDimShift-sheet_60
+  - first:
+      213: 5496041464492095568
+    second: YouWinAnimDimShift-sheet_61
+  - first:
+      213: -8829165934892242028
+    second: YouWinAnimDimShift-sheet_62
+  - first:
+      213: -9157457177821709426
+    second: YouWinAnimDimShift-sheet_63
+  - first:
+      213: 4504427213598277912
+    second: YouWinAnimDimShift-sheet_64
+  - first:
+      213: -3181898957825439143
+    second: YouWinAnimDimShift-sheet_65
+  - first:
+      213: 4950503278964563915
+    second: YouWinAnimDimShift-sheet_66
+  - first:
+      213: -3730118943302361077
+    second: YouWinAnimDimShift-sheet_67
+  - first:
+      213: 2191379897333140225
+    second: YouWinAnimDimShift-sheet_68
+  - first:
+      213: 7766523743821306376
+    second: YouWinAnimDimShift-sheet_69
+  - first:
+      213: -1749412470647545764
+    second: YouWinAnimDimShift-sheet_70
+  - first:
+      213: 720011363759009289
+    second: YouWinAnimDimShift-sheet_71
+  - first:
+      213: -8579278481940504260
+    second: YouWinAnimDimShift-sheet_72
+  - first:
+      213: 6056488768850403170
+    second: YouWinAnimDimShift-sheet_73
+  - first:
+      213: -8049173922389695784
+    second: YouWinAnimDimShift-sheet_74
+  - first:
+      213: -370653718794151038
+    second: YouWinAnimDimShift-sheet_75
+  - first:
+      213: -1281865096384261459
+    second: YouWinAnimDimShift-sheet_76
+  - first:
+      213: -181046077632299409
+    second: YouWinAnimDimShift-sheet_77
+  - first:
+      213: 8111939663607593753
+    second: YouWinAnimDimShift-sheet_78
+  - first:
+      213: -6857569445098007072
+    second: YouWinAnimDimShift-sheet_79
+  - first:
+      213: 7934669299882732656
+    second: YouWinAnimDimShift-sheet_80
+  - first:
+      213: -3775050452882575953
+    second: YouWinAnimDimShift-sheet_81
+  - first:
+      213: -8698151717570509440
+    second: YouWinAnimDimShift-sheet_82
+  - first:
+      213: -629168788278491755
+    second: YouWinAnimDimShift-sheet_83
+  - first:
+      213: 7899471254413905911
+    second: YouWinAnimDimShift-sheet_84
+  - first:
+      213: 2648642931947552954
+    second: YouWinAnimDimShift-sheet_85
+  - first:
+      213: 7360516837490848279
+    second: YouWinAnimDimShift-sheet_86
+  - first:
+      213: -720058063503514278
+    second: YouWinAnimDimShift-sheet_87
+  - first:
+      213: 8350596551032899613
+    second: YouWinAnimDimShift-sheet_88
+  - first:
+      213: 4133761692066312613
+    second: YouWinAnimDimShift-sheet_89
+  - first:
+      213: 5747789457571774957
+    second: YouWinAnimDimShift-sheet_90
+  - first:
+      213: 6707882889620395936
+    second: YouWinAnimDimShift-sheet_91
+  - first:
+      213: 4988459535430547157
+    second: YouWinAnimDimShift-sheet_92
+  - first:
+      213: 1395323560970465028
+    second: YouWinAnimDimShift-sheet_93
+  - first:
+      213: 4275758301371998073
+    second: YouWinAnimDimShift-sheet_94
+  - first:
+      213: 6065467547433252644
+    second: YouWinAnimDimShift-sheet_95
+  - first:
+      213: -3830484349271691391
+    second: YouWinAnimDimShift-sheet_96
+  - first:
+      213: 3075105126622558676
+    second: YouWinAnimDimShift-sheet_97
+  - first:
+      213: 5277134043497635721
+    second: YouWinAnimDimShift-sheet_98
+  - first:
+      213: -1617606217690427598
+    second: YouWinAnimDimShift-sheet_99
+  - first:
+      213: 9138268054767090865
+    second: YouWinAnimDimShift-sheet_100
+  - first:
+      213: -3859228651948889475
+    second: YouWinAnimDimShift-sheet_101
+  - first:
+      213: 1301353681634999765
+    second: YouWinAnimDimShift-sheet_102
+  - first:
+      213: -9189943370479435973
+    second: YouWinAnimDimShift-sheet_103
+  - first:
+      213: 4670482115305302539
+    second: YouWinAnimDimShift-sheet_104
+  - first:
+      213: 4585559662497805560
+    second: YouWinAnimDimShift-sheet_105
+  - first:
+      213: -3750036737023668551
+    second: YouWinAnimDimShift-sheet_106
+  - first:
+      213: 3021422623306012738
+    second: YouWinAnimDimShift-sheet_107
+  - first:
+      213: -3721238213458844508
+    second: YouWinAnimDimShift-sheet_108
+  - first:
+      213: 3531827934898996092
+    second: YouWinAnimDimShift-sheet_109
+  - first:
+      213: 4727380881218271506
+    second: YouWinAnimDimShift-sheet_110
+  - first:
+      213: -890802074448318458
+    second: YouWinAnimDimShift-sheet_111
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 240
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b746e6bde0c2df0800000000000000
+      internalID: -203771547525809381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adc346ee23512e20800000000000000
+      internalID: 3324029460872940965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4606ecc8760b680800000000000000
+      internalID: -8741373022270626620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75e213f00a8ce160800000000000000
+      internalID: 7056166452865459579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae6b06c1033aa680800000000000000
+      internalID: -8743119643875774803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7125ca5ef054fbd0800000000000000
+      internalID: -2597362031711149702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db90f8c8a951b810800000000000000
+      internalID: 1779301909248646097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0771ff57afad8f700800000000000000
+      internalID: 574449721746069360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90ea04cab2346820800000000000000
+      internalID: 2910507036922536091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0006a1c5ce7a8f0d0800000000000000
+      internalID: -3388774085996945408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a2f1039fa9662d0800000000000000
+      internalID: -3285768483075315050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2d8e56d85cb8130800000000000000
+      internalID: 3570164340712067824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouWinAnimDimShift-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25287ddb338eb0f0800000000000000
+      internalID: -1099296965889874643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8ae52c5f637717449853022295c85e9d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      YouWinAnimDimShift-sheet_0: -203771547525809381
+      YouWinAnimDimShift-sheet_1: 3324029460872940965
+      YouWinAnimDimShift-sheet_10: -3285768483075315050
+      YouWinAnimDimShift-sheet_11: 3570164340712067824
+      YouWinAnimDimShift-sheet_12: -1099296965889874643
+      YouWinAnimDimShift-sheet_2: -8741373022270626620
+      YouWinAnimDimShift-sheet_3: 7056166452865459579
+      YouWinAnimDimShift-sheet_4: -8743119643875774803
+      YouWinAnimDimShift-sheet_5: -2597362031711149702
+      YouWinAnimDimShift-sheet_6: 1779301909248646097
+      YouWinAnimDimShift-sheet_7: 574449721746069360
+      YouWinAnimDimShift-sheet_8: 2910507036922536091
+      YouWinAnimDimShift-sheet_9: -3388774085996945408
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

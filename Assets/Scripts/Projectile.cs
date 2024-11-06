@@ -4,6 +4,13 @@ public class Projectile : MonoBehaviour
 {
     public float speed = 5f;           // Speed of the projectile
     private Vector2 direction;         // Direction in which the projectile will move
+    public float lifetime = 5f;        // Time in seconds before the projectile is destroyed
+
+    private void Start()
+    {
+        // Destroy the projectile after 'lifetime' seconds
+        Destroy(gameObject, lifetime);
+    }
 
     public void SetDirection(Vector2 newDirection)
     {

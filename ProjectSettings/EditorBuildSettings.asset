@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_3_Scene_GT2.unity
     guid: 61e0c97e8202f594e95339c1fb657c21
+  - enabled: 1
+    path: Assets/Scenes/You_Win_Scene_GT2.unity
+    guid: aaa581e9ada1f284cbc598095a14288c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
