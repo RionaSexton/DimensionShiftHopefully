@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Company Logo_0: 890602858041706965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
