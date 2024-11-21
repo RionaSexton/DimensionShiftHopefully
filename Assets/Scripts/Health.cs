@@ -17,6 +17,7 @@ public class Health : MonoBehaviour
     [Header("Animator")]
     [SerializeField] private Animator animator; // Reference to the Animator component
     private bool dead;
+    public CheckpointManager checkpointManager;
 
     private void Awake()
     {
@@ -52,6 +53,29 @@ public class Health : MonoBehaviour
         }
     }
 
+    public void AddHealth(float _value)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+    }
+
+    public void Respawn()
+    {
+        dead = false;
+        AddHealth(startingHealth);
+        animator.ResetTrigger("die");
+        animator.Play("Idle2");
+
+        Vector3 respawnPosition = checkpointManager.GetRespawnPosition();
+        transform.position = respawnPosition;
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+        }
+        StartCoroutine(Invulnerability());
+    }
+
     private IEnumerator Invulnerability()
     {
         // Create new layers for "Player" and "Enemy"
@@ -80,12 +104,16 @@ public class Health : MonoBehaviour
     private IEnumerator ResetSceneAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay); // Wait for the specified delay
-        ResetScene(); // Reset the scene
-    }
-
-    private void ResetScene()
+        if (CheckpointManager.Instance != null)
     {
-        // Logic to reset the scene
+        // Respawn at the last checkpoint
+        transform.position = CheckpointManager.Instance.GetRespawnPosition();
+        Respawn();
+    }
+    else
+    {
+        // Reload the scene if no checkpoint is set
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     }
 }

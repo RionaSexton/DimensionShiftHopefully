@@ -16,6 +16,7 @@ TagManager:
   - RedKey
   - GreenKey
   - RedDoor3
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

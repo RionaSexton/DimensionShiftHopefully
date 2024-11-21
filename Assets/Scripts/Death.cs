@@ -6,6 +6,7 @@ public class Death : MonoBehaviour
 {
     public string playerTag = "Player"; // Tag to identify the player
     public Transform spriteTransform; // Reference to the player's sprite
+    public Transform playerTransform;
     private Animator animator;
     private bool dead;
 
@@ -73,17 +74,73 @@ public class Death : MonoBehaviour
 
     private void HandleDeath()
     {
-        StartCoroutine(ResetSceneAfterDelay(0.5f)); // 0.5 seconds delay after animation ends
+        // Check if CheckpointManager has been set and if there is a valid checkpoint
+        if (CheckpointManager.Instance != null)
+        {
+            Vector3 respawnPosition = CheckpointManager.Instance.GetRespawnPosition();
+
+            if (respawnPosition == new Vector3(0, 0, 0)) // No checkpoint set
+            {
+                Debug.Log("No checkpoint set. Fully resetting the scene.");
+                // Call ForceReloadScene when no checkpoint is available
+                StartCoroutine(ForceReloadScene());
+            }
+            else
+            {
+                // Respawn the player at the last checkpoint if one is set
+                if (playerTransform != null)
+                {
+                    playerTransform.position = respawnPosition;
+                    Debug.Log("Player moved to respawn position: " + playerTransform.position);
+
+                    ResetPlayerHealth();
+                    dead = false;
+
+                    if (animator != null)
+                    {
+                        animator.ResetTrigger("die");
+                        animator.Play("Idle2");
+                    }
+
+                    GetComponent<PlayerMovement>().enabled = true; // Enable movement again
+                }
+                else
+                {
+                    Debug.LogError("Player Transform is not assigned in the Death script.");
+                }
+            }
+        }
+        else
+        {
+            // If the CheckpointManager is not available, fully reset the scene
+            Debug.LogError("CheckpointManager.Instance is null! Fully resetting the scene.");
+            StartCoroutine(ForceReloadScene());
+        }
     }
 
-    private IEnumerator ResetSceneAfterDelay(float delay)
+    private void ResetPlayerHealth()
+{
+    Health healthScript = GetComponent<Health>();
+    if (healthScript != null)
     {
-        yield return new WaitForSeconds(delay); // Wait for the specified delay
-        ResetScene(); // Reset the scene
+        healthScript.Respawn();  // Ensure health is reset when respawning
     }
-
-    private void ResetScene()
+    else
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.LogError("Health script is missing on the player.");
+    }
+}
+
+    private IEnumerator ForceReloadScene()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        // Unload the current scene
+        yield return SceneManager.UnloadSceneAsync(sceneName);
+
+        // Reload the scene
+        yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+
+        Debug.Log("Scene fully reloaded.");
     }
 }

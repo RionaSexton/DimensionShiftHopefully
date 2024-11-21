@@ -320,8 +320,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.6304, y: 0.25744998, z: 0}
-    m_Extent: {x: 2.7804, y: 0.68655, z: 0}
+    m_Center: {x: 1.6301498, y: 0.2575, z: 0}
+    m_Extent: {x: 2.78125, y: 0.6869, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -638,8 +638,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.03704995, y: 0.26099998, z: 0}
-    m_Extent: {x: 1.1874499, y: 0.6894, z: 0}
+    m_Center: {x: 0.037250042, y: 0.26015002, z: 0}
+    m_Extent: {x: 1.18715, y: 0.68885, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -686,6 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   spriteTransform: {fileID: 1870738010}
+  playerTransform: {fileID: 1027564342}
 --- !u!61 &194159777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6473,8 +6474,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.62975, y: 0.25744998, z: 0}
-    m_Extent: {x: 2.77995, y: 0.68695, z: 0}
+    m_Center: {x: 1.6298501, y: 0.25785, z: 0}
+    m_Extent: {x: 2.78075, y: 0.68715, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13683,8 +13684,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.037450016, y: 0.26075, z: 0}
-    m_Extent: {x: 1.18735, y: 0.68955, z: 0}
+    m_Center: {x: 0.037549973, y: 0.26035002, z: 0}
+    m_Extent: {x: 1.18705, y: 0.68915, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -16751,6 +16752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   spriteTransform: {fileID: 1870738010}
+  playerTransform: {fileID: 1027564342}
 --- !u!61 &874351240
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17471,8 +17473,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.44225, y: 0.25685, z: 0}
-    m_Extent: {x: 1.5927501, y: 0.68625, z: 0}
+    m_Center: {x: 0.44325, y: 0.2577, z: 0}
+    m_Extent: {x: 1.5936501, y: 0.68579996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -20465,8 +20467,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.43405002, y: 0.25669998, z: 0}
-    m_Extent: {x: 1.58445, y: 0.6864, z: 0}
+    m_Center: {x: 0.43359995, y: 0.25730002, z: 0}
+    m_Extent: {x: 1.5843999, y: 0.6871, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -21381,8 +21383,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.3238, y: 0.26160002, z: 0}
-    m_Extent: {x: 0.7544, y: 0.6983, z: 0}
+    m_Center: {x: -0.3237, y: 0.262, z: 0}
+    m_Extent: {x: 0.7546, y: 0.6981, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -21634,6 +21636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   spriteTransform: {fileID: 1870738010}
+  playerTransform: {fileID: 1027564342}
 --- !u!61 &1843644810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23805,6 +23808,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58a26bdef8b754c4aa47fd63e6203366, type: 3}
+--- !u!1001 &1602108850339178259
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 114.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1740934
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900815529675844443, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_Name
+      value: Checkpoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
 --- !u!1001 &1647403698296228945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85033,6 +85093,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3070477585924049461, guid: 19243219c74d7924a80a3a7665c2eb67, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1027564342}
+    - target: {fileID: 3070477585924049461, guid: 19243219c74d7924a80a3a7665c2eb67, type: 3}
       propertyPath: spriteTransform
       value: 
       objectReference: {fileID: 1870738010}
@@ -85680,3 +85744,4 @@ SceneRoots:
   - {fileID: 1909414}
   - {fileID: 511969517}
   - {fileID: 530052141}
+  - {fileID: 1602108850339178259}
