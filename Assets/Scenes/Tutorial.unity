@@ -567,6 +567,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71383643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9039846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -589,7 +629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &203844587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,7 +1109,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 13
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -9957,6 +9997,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71383643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9039846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10219,6 +10299,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71383643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9039846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10422,6 +10542,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71383643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9039846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10527,6 +10687,46 @@ PrefabInstance:
     - target: {fileID: 1968150447667327796, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71383643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9039846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10642,6 +10842,34 @@ PrefabInstance:
     - target: {fileID: 509498112776614106, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8172065
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7495945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9496855
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8478769716678723688, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_Name
@@ -10972,7 +11200,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 13
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -18324,6 +18552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CeilingLights (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 887653958406755012, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 1968150447667327796, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.06
@@ -18363,6 +18595,46 @@ PrefabInstance:
     - target: {fileID: 1968150447667327796, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71383643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9039846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19676,6 +19948,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8172065
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7495945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9496855
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8478769716678723688, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_Name
       value: StreetLights (3)
@@ -19810,6 +20110,54 @@ PrefabInstance:
     - target: {fileID: 509498112776614106, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8172065
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7495945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9496855
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_LightType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_LocalBounds.m_Center.y
+      value: -0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.x
+      value: 0.9985302
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.y
+      value: 0.99853027
       objectReference: {fileID: 0}
     - target: {fileID: 8478769716678723688, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_Name
@@ -20320,6 +20668,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71383643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9039846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20372,6 +20760,34 @@ PrefabInstance:
     - target: {fileID: 509498112776614106, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8172065
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7495945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9496855
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8478769716678723688, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_Name
@@ -67917,7 +68333,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 12
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -67973,6 +68389,34 @@ PrefabInstance:
     - target: {fileID: 509498112776614106, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453184337756403175, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8172065
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7495945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9496855
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280487748546083028, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8478769716678723688, guid: 1bad6367059a6eb4fb87800316de896d, type: 3}
       propertyPath: m_Name
@@ -68176,6 +68620,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71383643
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9039846
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839595891529295946, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833674158834807070, guid: b1605f67c2b09184a8426423cea29e4c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68223,7 +68707,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 12
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
