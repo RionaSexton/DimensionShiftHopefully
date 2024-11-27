@@ -2,48 +2,42 @@ using UnityEngine;
 
 public class CheckpointManager : MonoBehaviour
 {
-    public static CheckpointManager Instance;
+    public static CheckpointManager Instance { get; private set; }
 
-    [SerializeField] private Vector3 defaultRespawnPosition = new Vector3(18.88f, -0.49f, 0.0088f); // Default respawn position
-    [SerializeField] private Vector3 currentCheckpoint; // Tracks the current active checkpoint
-    private bool checkpointReached = false; // Indicates if a checkpoint has been activated
+    private Vector3 respawnPosition;
+    private bool hasCheckpoint;
 
     private void Awake()
     {
-        if (Instance == null)
+        // Singleton pattern for global access
+        if (Instance != null && Instance != this)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // Keep this object between scenes
+            Destroy(gameObject);
         }
         else
         {
-            Destroy(gameObject); // Avoid duplicate instances
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
-        // Initialize the current checkpoint to the default position
-        currentCheckpoint = defaultRespawnPosition;
+        // Initialize with no checkpoint
+        respawnPosition = Vector3.zero;
+        hasCheckpoint = false;
     }
 
-    public void SetCheckpoint(Vector3 checkpointPosition)
+    public void SetCheckpoint(Vector3 position)
     {
-        // Set the active checkpoint
-        currentCheckpoint = checkpointPosition;
-        checkpointReached = true;
+        respawnPosition = position;
+        hasCheckpoint = true;
     }
 
     public Vector3 GetRespawnPosition()
     {
-        // Return the current checkpoint if one is reached; otherwise, return the default position
-        return checkpointReached ? currentCheckpoint : defaultRespawnPosition;
+        return hasCheckpoint ? respawnPosition : Vector3.zero;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public bool HasCheckpoint()
     {
-        if (other.CompareTag("Player"))
-        {
-            // Set this checkpoint as the active one
-            SetCheckpoint(transform.position); // Use this object's position as the checkpoint
-            Debug.Log("Checkpoint Activated: " + transform.position);
-        }
+        return hasCheckpoint;
     }
 }
