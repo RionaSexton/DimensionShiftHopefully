@@ -315,6 +315,7 @@ MonoBehaviour:
   footstepSound: {fileID: 8300000, guid: cdaa7c63f642ee5429e26731aee0f00b, type: 3}
   acceleration: 10
   deceleration: 15
+  jumpCooldown: 1
 --- !u!114 &4716804601498838606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,7 +479,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: aaba39deed3fe564cad25ca4bad9fe01, type: 3}
   m_Resource: {fileID: 8300000, guid: aaba39deed3fe564cad25ca4bad9fe01, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -575,7 +576,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: cdaa7c63f642ee5429e26731aee0f00b, type: 3}
   m_Resource: {fileID: 8300000, guid: cdaa7c63f642ee5429e26731aee0f00b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
