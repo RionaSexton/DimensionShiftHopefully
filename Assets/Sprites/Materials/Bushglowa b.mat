@@ -61,7 +61,7 @@ Material:
     - _TimeInterval: 2
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _GlowColor: {r: 7.1630507, g: 4.3866777, b: 1.0676991, a: 1}
+    - _GlowColor: {r: 5.675409, g: 3.4756408, b: 0.8459565, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
