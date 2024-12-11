@@ -11,6 +11,7 @@ public class DimensionShift : MonoBehaviour
     public AudioClip soundClip;                       // The sound clip to play
     private AudioSource audioSource;                  // Reference to the AudioSource component
 
+    public bool transitionActive = false;
 
     private GameObject[] dimensionAObjects; // All objects in Dimension A
     private GameObject[] dimensionBObjects; // All objects in Dimension B
@@ -44,7 +45,7 @@ public class DimensionShift : MonoBehaviour
     void Update()
     {
         // Listen for the RMB press to switch dimensions
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !transitionActive)
         {
             StartCoroutine(SwitchDimensionWithBlackout());
             PlaySound();
@@ -114,6 +115,7 @@ public class DimensionShift : MonoBehaviour
     // Coroutine to fade the screen to black
     IEnumerator FadeToBlack()
     {
+        transitionActive = true;
         float elapsedTime = 0f;
         while (elapsedTime < blackoutDuration)
         {
@@ -135,6 +137,7 @@ public class DimensionShift : MonoBehaviour
             blackoutImage.color = new Color(0, 0, 0, alpha);
             yield return null;
         }
+        transitionActive = false;
     }
 
     private void PlaySound()
