@@ -1267,8 +1267,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -587, y: 430.4}
-  m_SizeDelta: {x: 275.45, y: 59.068}
+  m_AnchoredPosition: {x: -606.7, y: 422.1}
+  m_SizeDelta: {x: 327.655, y: 59.068}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6416669984655718262
 CanvasRenderer:
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2088344870726217828, guid: e077ee01258affa44a476714749b685f, type: 3}
+  m_Sprite: {fileID: -1064097978198008466, guid: 48756250a254b5a4d8096fa8c4251bd9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2845,15 +2845,15 @@ RectTransform:
   m_GameObject: {fileID: 6116207411250029507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.04, y: 1.03, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2100477518429658432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -867.9, y: 429.8253}
-  m_SizeDelta: {x: 155.537, y: 120.4233}
+  m_AnchoredPosition: {x: -827.49457, y: 426.1}
+  m_SizeDelta: {x: 142.372, y: 140.483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7133438182277337820
 CanvasRenderer:
@@ -2883,7 +2883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4606908045521496030, guid: 79c1a7ca060b2274b80ecb575e352440, type: 3}
+  m_Sprite: {fileID: -8886713217412807493, guid: fd57f4aeda356514c8bf6f8ae244f408, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4377,7 +4377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -587, y: 430.4}
+  m_AnchoredPosition: {x: -554.49457, y: 422.1}
   m_SizeDelta: {x: 275.45, y: 59.068}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5808921710723308340
@@ -4408,7 +4408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -895193208314145225, guid: a9daf85b7e3e39f47b1f31a4843e9b4d, type: 3}
+  m_Sprite: {fileID: 2669681511511055463, guid: 535936de77c45104badf74c21cccfa3d, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

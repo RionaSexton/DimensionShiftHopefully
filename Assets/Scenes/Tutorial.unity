@@ -8414,6 +8414,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2359651293515045120, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359651293515045120, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3850001
+      objectReference: {fileID: 0}
     - target: {fileID: 5335825780244024939, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -34.5
@@ -8457,6 +8465,14 @@ PrefabInstance:
     - target: {fileID: 6900815529675844443, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
       propertyPath: m_Name
       value: Checkpoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843029652729204999, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.89939743
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843029652729204999, guid: 7dbf9ccd849b8a9458c3bbd8fa6a65b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9193,8 +9209,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1526683641178558578, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2637416182322672263, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4516115200454710562, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116207411250029507, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7165160369194707751, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
@@ -9204,6 +9232,14 @@ PrefabInstance:
     - target: {fileID: 7594527264376414526, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Name
       value: UICanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469949454673388847, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558827091741033312, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8870181830817163294, guid: abf62926d15bc3c468a91abaa79c5ca2, type: 3}
       propertyPath: m_Pivot.x
