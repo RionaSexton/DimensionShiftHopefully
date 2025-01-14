@@ -17,6 +17,7 @@ TagManager:
   - GreenKey
   - RedDoor3
   - Checkpoint
+  - Projectile
   layers:
   - Default
   - TransparentFX

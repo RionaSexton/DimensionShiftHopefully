@@ -10373,6 +10373,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1214817744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8099585107364482833, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+  m_PrefabInstance: {fileID: 1224122549175434310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1233189343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77642,6 +77653,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2402722761371403333, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+      propertyPath: angryText
+      value: 
+      objectReference: {fileID: 1214817744}
     - target: {fileID: 3369157164385536607, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_Camera
       value: 
@@ -77652,19 +77667,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5071149937942007013, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 4.4052
+      value: 4.7067
       objectReference: {fileID: 0}
     - target: {fileID: 5071149937942007013, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 3.3983
+      value: 3.6867
       objectReference: {fileID: 0}
     - target: {fileID: 5071149937942007013, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -994.69
+      value: -994.8407
       objectReference: {fileID: 0}
     - target: {fileID: 5071149937942007013, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -540.59
+      value: -540.4458
       objectReference: {fileID: 0}
     - target: {fileID: 5229439058710973422, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_SortingOrder
@@ -77682,17 +77697,39 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -539.76013
       objectReference: {fileID: 0}
+    - target: {fileID: 8099585107364482833, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+      propertyPath: m_margin.x
+      value: 98.035416
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099585107364482833, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+      propertyPath: m_margin.y
+      value: 25.015598
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+      propertyPath: m_text
+      value: 'Welcome to the tutorial!
+
+        Here you will learn the controls.
+
+        That
+        thing in front of you is a checkpoint, when it glows, it means you will respawn
+        by it.'
+      objectReference: {fileID: 0}
     - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_fontSize
-      value: 0.25
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_margin.w
-      value: 23.558899
+      value: 23.50647
       objectReference: {fileID: 0}
     - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_margin.x
-      value: 98.34999
+      value: 98.087845
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+      propertyPath: m_margin.y
+      value: 24.89763
       objectReference: {fileID: 0}
     - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_margin.z
@@ -77711,8 +77748,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236944477140060807, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650184316958064979, guid: cd9f1b55c2ff0874fb7f96c4d1e94ccb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
